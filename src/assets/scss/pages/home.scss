@@ -1,0 +1,29 @@
+.container-home-introduction {
+    .swiper-container {
+        height: 100%;
+        width: 90vw;
+
+        .swiper-wrapper {
+            background-color: red;
+            height: 100%;
+            width: 100%;
+        }
+
+        .swiper-slide {
+            height: inherit;
+            width: inherit;
+
+            @include flex(center, center, column, center, center, column);
+        }
+    }
+}
+
+
+.container-home-presentation {
+    @include grid( repeat(2, 1fr), auto, 1fr, auto);
+    gap: 2% 2%;
+
+    @include respond(tablet) {
+        gap: 2% 2%;
+    }
+}

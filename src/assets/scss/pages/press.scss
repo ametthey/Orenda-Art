@@ -1,0 +1,7 @@
+// Carousel with thumbnail and text
+#container-carousel-thumbnail-text,
+#container-press-text {
+    display: grid;
+    @include grid(repeat(2, 1fr), auto, 1fr, auto);
+}
+

@@ -1,0 +1,78 @@
+/****************************************************
+ *
+ * Header
+ *
+ * *************************************************/
+
+.skip-link {
+    display: none;
+}
+
+#masthead {
+    @include flex(flex-start, center, column, flex-start, center, column);
+    flex-direction: column;
+}
+
+.site-branding {
+    svg {
+        height: 160px;
+        max-width: 100%;
+    }
+}
+
+/**************************
+ * Navigation Desktop
+**************************/
+
+#site-navigation-desktop {
+    margin: $ratio 0 calc( #{$ratio} * 1.25 ) 0;
+    @include flex(center, space-between, row, flex-start, center, row);
+    width: 100%;
+
+    @include respond(tablet) {
+        display: none;
+    }
+
+    .site-navigation-langue {
+        @include font1(700);
+        color: $beige;
+    }
+}
+
+.main-navigation {
+    width: 80%;
+}
+
+#menu-header {
+    @include flex(center, space-between, row, flex-start, center, row);
+    width: inherit;
+
+    li {
+        padding: 0 1% 0 0;
+        text-transform: uppercase;
+
+        &:last-child {
+            padding: 0 0 0 0;
+        }
+    }
+}
+
+/**************************
+ * Navigation Mobile
+**************************/
+#site-navigation-mobile {
+    align-items: center;
+    background-color: red;
+    display: none;
+    height: 100vh;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1000;
+
+    &.is-active {
+        display: flex;
+    }
+}
+

@@ -1,0 +1,24 @@
+.exhibitions-introduction {
+
+}
+
+.exhibitions-presentation {
+    @include flex(flex-start, center, column, center, center, column);
+
+    .presentation-informations {
+        @include flex(center, space-between, row, center, center, column);
+        width: 100%;
+    }
+}
+
+.exhibitions-presentation-four-images,
+.exhibitions-past-exhibition {
+    @include grid( repeat(2, 1fr), auto, repeat(1, 1fr), auto );
+
+    gap: 2% 2%;
+
+    @include respond(tablet) {
+        gap: 2% 2%;
+    }
+
+}

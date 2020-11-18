@@ -1,0 +1,58 @@
+/*
+ * SCSS Structures
+ *
+ * # Sass Guidelines
+ * @link: https://sass-guidelin.es/fr/#architecture
+ *
+ * # Sass Boilereplate
+ * @link: https://github.com/HugoGiraudel/sass-boilerplate/tree/master/stylesheets/abstracts
+ */
+
+
+
+// Abstracts
+@import 'abstract/mixins';
+@import 'abstract/variables';
+@import 'abstract/functions';
+
+// Vendors
+@import 'vendors/reset';
+@import 'vendors/normalize';
+@import 'vendors/wordpress-core';
+@import 'vendors/hamburger';
+@import 'vendors/swiper';
+
+// Base
+@import 'base/base';
+@import 'base/fonts';
+@import 'base/helpers';
+@import 'base/typography';
+
+
+// Components
+@import 'components/article';
+@import 'components/widget';
+
+// Layout
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/sidebar';
+
+// Pages
+@import 'pages/home';
+@import 'pages/press';
+@import 'pages/founders';
+@import 'pages/artists';
+@import 'pages/artist-individual';
+@import 'pages/available-works';
+@import 'pages/exhibitions';
+
+
+
+
+
+
+// add bold to active element on nav
+.current-menu-item {
+    font-weight: bold;
+}

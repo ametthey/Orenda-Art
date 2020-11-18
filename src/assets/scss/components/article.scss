@@ -1,0 +1,16 @@
+// -----------------------------------------------------------------------------
+// This file contains basic style for Articles
+// -----------------------------------------------------------------------------
+.entry-header {
+
+    h4 {
+        @include font1(700, $h4)
+        color: $color3;
+    }
+    // @include margin;
+}
+
+.entry-content {
+    // @include margin;
+}
+

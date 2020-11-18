@@ -1,0 +1,28 @@
+.container-founders-bio {
+    @include grid(repeat(3, 1fr), auto, 1fr, auto);
+    gap: 2% 2%;
+
+    @include respond(tablet) {
+        gap: 2% 2%;
+    }
+
+    h6 {
+        color: $bleuClair;
+    }
+
+    .image {
+        background-color: red;
+        height: 250px;
+        width: 100%;
+    }
+}
+
+.container-founders-history {
+    @include grid( repeat(2, 1fr), auto, 1fr, auto );
+    gap: 2% 2%;
+
+    @include respond(tablet) {
+        gap: 2% 2%;
+    }
+
+}

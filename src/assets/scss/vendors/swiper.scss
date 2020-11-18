@@ -1,0 +1,23 @@
+// import Swiper styles
+@import '../../../node_modules/swiper/swiper-bundle.css';
+
+.swiper-container {
+    height: auto;
+    margin: auto;
+    width: 50vw;
+
+    .swiper-slide {
+        color: $grisFonce;
+
+        @include flex(flex-start, center, column, flex-start, center, column);
+        flex-direction: column;
+
+    }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: $grisFonce;
+}
+
+

@@ -1,0 +1,35 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+$ratio: 40px;
+
+
+/*
+ * Colors
+ */
+$bleuClair: #00597B;
+$bleuFonce: #002938;
+$gris: #ABBEC5;
+$grisFonce: #4E585B;
+$beige: #DE9764;
+$bg: #F3FCFF;
+$color1: $grisFonce;
+$color2: $bleuClair;
+$color3: #8AA2AB;
+
+/*
+ * Typography
+ */
+$h1: 4.768125rem; // 76,29px
+$h2: 3.815rem; //61.04px
+$h3: 3.051875rem; //48.83px
+$h4: 2.44125rem; //39.06px
+$h5: 1.953125rem; //31.25px
+$h6: 1.25rem; //20px
+$p: 1rem; // 16px
+$small: 0.875rem; //14px
+
+$font1: 'Montserrat', sans-serif;
+$font2: 'adobe-hebrew', sans-serif;
+
+$lh: 1.4;

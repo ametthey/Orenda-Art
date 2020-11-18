@@ -1,0 +1,10 @@
+.post-type-archive-artiste {
+    #main {
+        @include grid(repeat(4, 1fr), auto, repeat(2, 1fr), auto);
+        gap: 8% 2%;
+        @include respond(tablet) {
+            gap: 2% 2%;
+        }
+
+    }
+}

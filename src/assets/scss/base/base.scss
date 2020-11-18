@@ -1,0 +1,112 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/**
+ * Make all elements inherit from `html` box-sizing
+ */
+* {
+  box-sizing: inherit;
+
+  & :before {
+      box-sizing: inherit;
+  }
+
+  & :after {
+      box-sizing: inherit;
+  }
+}
+
+/**
+ * Set up a decent box model on the root element
+ */
+html {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+a {
+    color: $grisFonce;
+    text-decoration: none;
+
+    & :hover {
+        color: inherit;
+        cursor: hand;
+        outline: none;
+    }
+    & :active {
+        color: inherit;
+        outline: none;
+    }
+    & :focus {
+        color: inherit;
+        outline: none;
+    }
+}
+
+/*
+ * Container wrapping the whole page
+ */
+#page {
+    height: 100%;
+    width: 100%;
+}
+
+/*
+ * Container for the main element and the sidebar
+ * without header & footer
+ */
+#content {
+    height: 100%;
+    position: relative;
+    width: 100%;
+
+    @include grid( repeat(3,1fr) , repeat(3,1fr) , 1fr, auto);
+    grid-template-areas:
+        'main main main'
+        'main main main'
+        'main main main';
+
+    @include respond(tablet) {
+        grid-template-areas:
+            'main'
+    }
+
+
+    #primary {
+        grid-area: main;
+    }
+
+    #secondary {
+        grid-area: sidebar;
+    }
+}
+
+/*
+ * Container with sidebar
+ */
+#primary {
+    height: inherit;
+    width: inherit;
+}
+
+/*
+ * Container for main element
+ * without sidebar
+ */
+#main {
+}
