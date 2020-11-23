@@ -6,55 +6,55 @@
         <div class="author-bio">
             <h1><?php the_archive_title(); ?></h1>
             <p>
-                <?php esc_html_e( 'The Author Bio: ' , 'orenda-art'); ?>
+                <?php esc_html_e( 'The Author Bio: ' , 'orenda_art'); ?>
                 <?php echo the_author_meta( 'description' , $post->post_author ); ?>
             </p>
             <p>
-                <?php esc_html_e( 'the Author login: ' , 'orenda-art'); ?>
+                <?php esc_html_e( 'the Author login: ' , 'orenda_art'); ?>
                 <?php echo the_author_meta( 'user_login' , $post->post_author ); ?>
             </p>
             <p>
-                <?php esc_html_e( 'The Author Password: ' , 'orenda-art'); ?>
+                <?php esc_html_e( 'The Author Password: ' , 'orenda_art'); ?>
                 <?php echo the_author_meta( 'user_pass' , $post->post_author ); ?>
             </p>
             <p>
-                <?php esc_html_e( 'The Author Nicename: ' , 'orenda-art'); ?>
+                <?php esc_html_e( 'The Author Nicename: ' , 'orenda_art'); ?>
                 <?php echo the_author_meta( 'user_nicename' , $post->post_author ); ?>
             </p>
             <p>
-                <?php esc_html_e( 'The Author Email: ' , 'orenda-art'); ?>
+                <?php esc_html_e( 'The Author Email: ' , 'orenda_art'); ?>
                 <?php echo the_author_meta( 'user_email' , $post->post_author ); ?>
             </p>
             <p>
-                <?php esc_html_e( 'The Author Url: ' , 'orenda-art'); ?>
+                <?php esc_html_e( 'The Author Url: ' , 'orenda_art'); ?>
                 <?php echo the_author_meta( 'user_url' , $post->post_author ); ?>
             </p>
             <p>
-                <?php esc_html_e( 'The Author Display Name: ' , 'orenda-art'); ?>
+                <?php esc_html_e( 'The Author Display Name: ' , 'orenda_art'); ?>
                 <?php echo the_author_meta( 'display_name' , $post->post_author ); ?>
             </p>
             <p>
-                <?php esc_html_e( 'The Author Nickname', 'orenda-art'); ?>
+                <?php esc_html_e( 'The Author Nickname', 'orenda_art'); ?>
                 <?php echo the_author_meta( 'nickname' , $post->post_author ); ?>
             </p>
             <p>
-                <?php esc_html_e( 'The Author First Name', 'orenda-art'); ?>
+                <?php esc_html_e( 'The Author First Name', 'orenda_art'); ?>
                 <?php echo the_author_meta( 'first_name' , $post->post_author ); ?>
             </p>
             <p>
-                <?php esc_html_e( 'The Author Last Name', 'orenda-art'); ?>
+                <?php esc_html_e( 'The Author Last Name', 'orenda_art'); ?>
                 <?php echo the_author_meta( 'last_name' , $post->post_author ); ?>
             </p>
             <p>
-                <?php esc_html_e( 'The Author User Level', 'orenda-art'); ?>
+                <?php esc_html_e( 'The Author User Level', 'orenda_art'); ?>
                 <?php echo the_author_meta( 'user_level' , $post->post_author ); ?>
             </p>
             <p>
-                <?php esc_html_e( 'The Author User Level', 'orenda-art'); ?>
+                <?php esc_html_e( 'The Author User Level', 'orenda_art'); ?>
                 <?php echo the_author_meta( 'user_level' , $post->post_author ); ?>
             </p>
             <p>
-                <?php esc_html_e( 'The Author Avatar', 'orenda-art'); ?>
+                <?php esc_html_e( 'The Author Avatar', 'orenda_art'); ?>
                 <?php echo get_avatar( get_the_author_meta( 'ID' ) ); ?>
             </p>
             <p>

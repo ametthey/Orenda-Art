@@ -5,7 +5,7 @@
  * https://developer.wordpress.org/reference/functions/remove_menu_page/
  */
 
-function orenda-art_remove_options_menu(){
+function orenda_art_remove_options_menu(){
 
   remove_menu_page( 'edit.php' );                   //Posts
   remove_menu_page( 'edit-comments.php' );          //Comments
@@ -20,5 +20,5 @@ function orenda-art_remove_options_menu(){
   // remove_menu_page( 'options-general.php' );        //Settings
 
 }
-add_action( 'admin_menu', 'orenda-art_remove_options_menu' );
+add_action( 'admin_menu', 'orenda_art_remove_options_menu' );
 

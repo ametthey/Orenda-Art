@@ -2,24 +2,24 @@
 
 // Register Taxonomy Skill
 // Taxonomy Key: skill
-function orenda-art_taxonomy_skill() {
+function orenda_art_taxonomy_skill() {
 
 	$labels = array(
-		'name'              => _x( 'Skills', 'taxonomy general name', 'orenda-art' ),
-		'singular_name'     => _x( 'Skill', 'taxonomy singular name', 'orenda-art' ),
-		'search_items'      => __( 'Search Skills', 'orenda-art' ),
-		'all_items'         => __( 'All Skills', 'orenda-art' ),
-		'parent_item'       => __( 'Parent Skill', 'orenda-art' ),
-		'parent_item_colon' => __( 'Parent Skill:', 'orenda-art' ),
-		'edit_item'         => __( 'Edit Skill', 'orenda-art' ),
-		'update_item'       => __( 'Update Skill', 'orenda-art' ),
-		'add_new_item'      => __( 'Add New Skill', 'orenda-art' ),
-		'new_item_name'     => __( 'New Skill Name', 'orenda-art' ),
-		'menu_name'         => __( 'Skills', 'orenda-art' ),
+		'name'              => _x( 'Skills', 'taxonomy general name', 'orenda_art' ),
+		'singular_name'     => _x( 'Skill', 'taxonomy singular name', 'orenda_art' ),
+		'search_items'      => __( 'Search Skills', 'orenda_art' ),
+		'all_items'         => __( 'All Skills', 'orenda_art' ),
+		'parent_item'       => __( 'Parent Skill', 'orenda_art' ),
+		'parent_item_colon' => __( 'Parent Skill:', 'orenda_art' ),
+		'edit_item'         => __( 'Edit Skill', 'orenda_art' ),
+		'update_item'       => __( 'Update Skill', 'orenda_art' ),
+		'add_new_item'      => __( 'Add New Skill', 'orenda_art' ),
+		'new_item_name'     => __( 'New Skill Name', 'orenda_art' ),
+		'menu_name'         => __( 'Skills', 'orenda_art' ),
 	);
 	$args = array(
 		'labels' => $labels,
-		'description' => __( 'Skill', 'orenda-art' ),
+		'description' => __( 'Skill', 'orenda_art' ),
 		'hierarchical' => true,
 		'public' => true,
 		'publicly_queryable' => true,
@@ -34,4 +34,4 @@ function orenda-art_taxonomy_skill() {
 	register_taxonomy( 'skill', array( 'project' ), $args );
 
 }
-add_action( 'init', 'orenda-art_taxonomy_skill' );
+add_action( 'init', 'orenda_art_taxonomy_skill' );

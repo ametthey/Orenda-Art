@@ -20,7 +20,7 @@
         <?php the_content(); ?>
 
         <!-- edit the post -->
-        <?php edit_post_link( esc_html_e( 'Editer', 'orenda-art' ), '<p>' , '</p>' , null, 'edit-post-link'); ?>
+        <?php edit_post_link( esc_html_e( 'Editer', 'orenda_art' ), '<p>' , '</p>' , null, 'edit-post-link'); ?>
 
         <!-- the skills tags -->
         <p>My skills are: <?php the_terms($post->ID,  'skill' );?></p>

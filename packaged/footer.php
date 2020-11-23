@@ -6,39 +6,39 @@
 
     <div class="footer-container">
         <div class="footer-item">
-            <h2><?php esc_html_e('Contact', 'orenda-art'); ?></h2>
+            <h2><?php esc_html_e('Contact', 'orenda_art'); ?></h2>
             <p>
-                <a href="mailto:<?php esc_html_e('art@orenda-art.com', 'orenda-art'); ?>">
-                    <?php esc_html_e('art@orenda-art.com', 'orenda-art'); ?>
+                <a href="mailto:<?php esc_html_e('art@orenda-art.com', 'orenda_art'); ?>">
+                    <?php esc_html_e('art@orenda-art.com', 'orenda_art'); ?>
                 </a>
             </p>
             <p>
-                <a href="tel:<?php esc_html_e('+33 1 49 26 90 09', 'orenda-art'); ?>)">
-                    <?php esc_html_e('+33 1 49 26 90 09', 'orenda-art'); ?>
+                <a href="tel:<?php esc_html_e('+33 1 49 26 90 09', 'orenda_art'); ?>)">
+                    <?php esc_html_e('+33 1 49 26 90 09', 'orenda_art'); ?>
                 </a>
             </p>
             <p>
-                <a href="tel:<?php esc_html_e('+33 6 73 79 45 18', 'orenda-art'); ?>">
-                    <?php esc_html_e('+33 6 73 79 45 18', 'orenda-art'); ?>
+                <a href="tel:<?php esc_html_e('+33 6 73 79 45 18', 'orenda_art'); ?>">
+                    <?php esc_html_e('+33 6 73 79 45 18', 'orenda_art'); ?>
                 </a>
             </p>
         </div>
         <div class="footer-item">
-            <h2><?php esc_html_e('Gallery Hours', 'orenda-art'); ?></h2>
+            <h2><?php esc_html_e('Gallery Hours', 'orenda_art'); ?></h2>
             <p>
-                <?php esc_html_e('Wednesday - Saturday, 14h30 to 19h', 'orenda-art'); ?>
+                <?php esc_html_e('Wednesday - Saturday, 14h30 to 19h', 'orenda_art'); ?>
             </p>
             <p>
-                <?php esc_html_e('Tuesday by appoitment only', 'orenda-art'); ?>
+                <?php esc_html_e('Tuesday by appoitment only', 'orenda_art'); ?>
             </p>
         </div>
         <div class="footer-item">
-            <h2><?php esc_html_e('Adress', 'orenda-art'); ?></h2>
+            <h2><?php esc_html_e('Adress', 'orenda_art'); ?></h2>
             <p>
-                <?php esc_html_e('54 Rue de Verneuil 75007, Paris ', 'orenda-art'); ?>
+                <?php esc_html_e('54 Rue de Verneuil 75007, Paris ', 'orenda_art'); ?>
             </p>
             <p>
-                <?php esc_html_e('Parking Musée d\'Orsay', 'orenda-art'); ?>
+                <?php esc_html_e('Parking Musée d\'Orsay', 'orenda_art'); ?>
             </p>
         </div>
         <div class="footer-item">

@@ -2,21 +2,21 @@
 
 /**************************************************************************
  * Après avoir cloner le projet:
- * changer le mot orenda-art par le nom du projet
+ * changer le mot orenda_art par le nom du projet
  * en terme d'organiser, on renomme les handle par le
  * nom du projet pour mieux s'y retrouver
- * ex: orenda-art_assets -> myProject_assets
+ * ex: orenda_art_assets -> myProject_assets
  ***********************************************************************/
 
 /*
  * Starter Theme  stylesheet
  */
-function orenda-art_assets() {
-    wp_enqueue_style( 'orenda-art-stylesheet', get_stylesheet_directory_uri() . '/dist/assets/css/bundle.css', [], '1.0.0' ,  'all' );
-    wp_enqueue_script( 'orenda-art-scripts', get_stylesheet_directory_uri() . '/dist/assets/js/main.js', [], '1.0.1' ,   true );
+function orenda_art_assets() {
+    wp_enqueue_style( 'orenda_art-stylesheet', get_stylesheet_directory_uri() . '/dist/assets/css/bundle.css', [], '1.0.0' ,  'all' );
+    wp_enqueue_script( 'orenda_art-scripts', get_stylesheet_directory_uri() . '/dist/assets/js/main.js', [], '1.0.1' ,   true );
 
 }
-add_action( 'wp_enqueue_scripts', 'orenda-art_assets' );
+add_action( 'wp_enqueue_scripts', 'orenda_art_assets' );
 
 
 
@@ -24,21 +24,21 @@ add_action( 'wp_enqueue_scripts', 'orenda-art_assets' );
  * Admin stylesheet
  */
 
-function orenda-art_admin_assets() {
-    wp_enqueue_style( 'orenda-art-admin-stylesheet', get_stylesheet_directory_uri() . '/dist/assets/css/admin.css', [], '1.0.0', 'all');
-    wp_enqueue_script( 'orenda-art-admin-scripts', get_stylesheet_directory_uri() . '/dist/assets/js/admin.js', [], '1.0.0' , true );
+function orenda_art_admin_assets() {
+    wp_enqueue_style( 'orenda_art-admin-stylesheet', get_stylesheet_directory_uri() . '/dist/assets/css/admin.css', [], '1.0.0', 'all');
+    wp_enqueue_script( 'orenda_art-admin-scripts', get_stylesheet_directory_uri() . '/dist/assets/js/admin.js', [], '1.0.0' , true );
 }
 
-add_action( 'admin_enqueue_scripts', 'orenda-art_admin_assets' );
+add_action( 'admin_enqueue_scripts', 'orenda_art_admin_assets' );
 
 /*
  * Login Stylesheet
  */
-function orenda-art_login_assets() {
-    wp_enqueue_style( 'orenda-art-admin-stylesheet', get_stylesheet_directory_uri() . '/dist/assets/css/login.css', [], '1.0.0', 'all' );
-    // wp_enqueue_script( 'orenda-art-admin-scripts', get_stylesheet_directory_uri() . '/dist/assets/css/login.js', [], '1.0.0', 'all' );
+function orenda_art_login_assets() {
+    wp_enqueue_style( 'orenda_art-admin-stylesheet', get_stylesheet_directory_uri() . '/dist/assets/css/login.css', [], '1.0.0', 'all' );
+    // wp_enqueue_script( 'orenda_art-admin-scripts', get_stylesheet_directory_uri() . '/dist/assets/css/login.js', [], '1.0.0', 'all' );
 }
-add_action( 'login_enqueue_scripts', 'orenda-art_login_assets' );
+add_action( 'login_enqueue_scripts', 'orenda_art_login_assets' );
 
 /***********************************************************************
  *
@@ -46,13 +46,13 @@ add_action( 'login_enqueue_scripts', 'orenda-art_login_assets' );
  *
  ***********************************************************************/
 
-function orenda-art_defer_parsing_of_js( $url ) {
+function orenda_art_defer_parsing_of_js( $url ) {
     if ( is_user_logged_in() ) return $url; //don't break WP Admin
     if ( FALSE === strpos( $url, '.js' ) ) return $url;
     if ( strpos( $url, 'jquery.js' ) ) return $url;
     return str_replace( ' src', ' defer src', $url );
 }
-add_filter( 'script_loader_tag', 'orenda-art_defer_parsing_of_js', 10 );
+add_filter( 'script_loader_tag', 'orenda_art_defer_parsing_of_js', 10 );
 
 /***********************************************************************
  *
@@ -60,10 +60,10 @@ add_filter( 'script_loader_tag', 'orenda-art_defer_parsing_of_js', 10 );
  *
  ***********************************************************************/
 
-function orenda-art_no_more_jquery(){
+function orenda_art_no_more_jquery(){
     wp_deregister_script('jquery');
 }
-add_action('wp_enqueue_scripts', 'orenda-art_no_more_jquery');
+add_action('wp_enqueue_scripts', 'orenda_art_no_more_jquery');
 
 /***********************************************************************
  *

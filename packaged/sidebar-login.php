@@ -17,7 +17,7 @@ if ( ! is_active_sidebar( 'my-main-sidebar' ) ) {
 
     <!-- missing password -->
     <a href="<?php esc_url( wp_lostpassword_url() ); ?>">
-        <?php esc_html_e( 'Lost password? ', 'orenda-art' ); ?>
+        <?php esc_html_e( 'Lost password? ', 'orenda_art' ); ?>
      </a>
 
      <!-- calendar -->

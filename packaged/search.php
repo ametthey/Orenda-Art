@@ -4,7 +4,7 @@
     <main id="main" class="site-main" role="main">
 
         <h1>
-            <?php esc_html_e( 'The Search Results are:' , 'orenda-art'  ); ?>
+            <?php esc_html_e( 'The Search Results are:' , 'orenda_art'  ); ?>
             <?php echo get_search_query(); ?>
         </h1>
 

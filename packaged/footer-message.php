@@ -8,7 +8,7 @@
                     $footer_message = '&copy;' . date( 'Y' ) . ' ' . get_bloginfo( 'name' );
                 ?>
 
-                <p><?php echo apply_filters( 'orenda-art_footer_message', $footer_message ); ?></p>
+                <p><?php echo apply_filters( 'orenda_art_footer_message', $footer_message ); ?></p>
 
                 <?php
                     if (! is_active_sidebar( 'my-footer-sidebar' )) {

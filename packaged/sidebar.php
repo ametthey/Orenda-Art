@@ -12,15 +12,15 @@ if ( ! is_active_sidebar( 'my-main-sidebar' ) ) {
     <?php else: ?>
 
     <a href="<?php echo wp_logout_url( get_the_permalink() ); ?>">
-        <?php _e( 'Logout', 'orenda-art' ); ?>
+        <?php _e( 'Logout', 'orenda_art' ); ?>
     </a>
 
     <?php endif; ?>
 
-    <h3><?php _e( 'List Authors', 'orenda-art' ); ?></h3>
+    <h3><?php _e( 'List Authors', 'orenda_art' ); ?></h3>
     <?php wp_list_authors(); ?>
 
-    <h3><?php _e( 'Dropdown Authors', 'orenda-art' ); ?></h3>
+    <h3><?php _e( 'Dropdown Authors', 'orenda_art' ); ?></h3>
     <form action="<?php bloginfo( 'url' ); ?>" method="get">
         <?php wp_dropdown_users( [ 'name' => 'author' ] ); ?>
         <input type="submit" name="submit" value"View">
@@ -28,7 +28,7 @@ if ( ! is_active_sidebar( 'my-main-sidebar' ) ) {
     </form>
 
 
-    <h3><?php _e( 'The Search Form', 'orenda-art' ); ?></h3>
+    <h3><?php _e( 'The Search Form', 'orenda_art' ); ?></h3>
     <?php get_search_form(); ?>
 
     <?php dynamic_sidebar( 'my-main-sidebar' ); ?>
