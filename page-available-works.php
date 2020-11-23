@@ -17,97 +17,97 @@
 
             <article class="available-works-grid">
                 <div class="available-works-item">
-                    <img src="http://orenda.local/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
+                    <img src="/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
                     <h3>Artist Name</h3>
                     <h5>Art Work name, 04/10/1999</h5>
                 </div>
                 <div class="available-works-item">
-                    <img src="http://orenda.local/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
+                    <img src="/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
                     <h3>Artist Name</h3>
                     <h5>Art Work name, 04/10/1999</h5>
                 </div>
                 <div class="available-works-item">
-                    <img src="http://orenda.local/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
-                    <h3>Artist Name</h3>
-                    <h5>Art Work name, 04/10/1999</h5>
-                </div>
-
-                <div class="available-works-item">
-                    <img src="http://orenda.local/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
-                    <h3>Artist Name</h3>
-                    <h5>Art Work name, 04/10/1999</h5>
-                </div>
-                <div class="available-works-item">
-                    <img src="http://orenda.local/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
-                    <h3>Artist Name</h3>
-                    <h5>Art Work name, 04/10/1999</h5>
-                </div>
-                <div class="available-works-item">
-                    <img src="http://orenda.local/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
+                    <img src="/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
                     <h3>Artist Name</h3>
                     <h5>Art Work name, 04/10/1999</h5>
                 </div>
 
                 <div class="available-works-item">
-                    <img src="http://orenda.local/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
+                    <img src="/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
                     <h3>Artist Name</h3>
                     <h5>Art Work name, 04/10/1999</h5>
                 </div>
                 <div class="available-works-item">
-                    <img src="http://orenda.local/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
+                    <img src="/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
                     <h3>Artist Name</h3>
                     <h5>Art Work name, 04/10/1999</h5>
                 </div>
                 <div class="available-works-item">
-                    <img src="http://orenda.local/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
-                    <h3>Artist Name</h3>
-                    <h5>Art Work name, 04/10/1999</h5>
-                </div>
-
-                <div class="available-works-item">
-                    <img src="http://orenda.local/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
-                    <h3>Artist Name</h3>
-                    <h5>Art Work name, 04/10/1999</h5>
-                </div>
-                <div class="available-works-item">
-                    <img src="http://orenda.local/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
-                    <h3>Artist Name</h3>
-                    <h5>Art Work name, 04/10/1999</h5>
-                </div>
-                <div class="available-works-item">
-                    <img src="http://orenda.local/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
+                    <img src="/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
                     <h3>Artist Name</h3>
                     <h5>Art Work name, 04/10/1999</h5>
                 </div>
 
                 <div class="available-works-item">
-                    <img src="http://orenda.local/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
+                    <img src="/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
                     <h3>Artist Name</h3>
                     <h5>Art Work name, 04/10/1999</h5>
                 </div>
                 <div class="available-works-item">
-                    <img src="http://orenda.local/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
+                    <img src="/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
                     <h3>Artist Name</h3>
                     <h5>Art Work name, 04/10/1999</h5>
                 </div>
                 <div class="available-works-item">
-                    <img src="http://orenda.local/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
+                    <img src="/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
                     <h3>Artist Name</h3>
                     <h5>Art Work name, 04/10/1999</h5>
                 </div>
 
                 <div class="available-works-item">
-                    <img src="http://orenda.local/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
+                    <img src="/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
                     <h3>Artist Name</h3>
                     <h5>Art Work name, 04/10/1999</h5>
                 </div>
                 <div class="available-works-item">
-                    <img src="http://orenda.local/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
+                    <img src="/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
                     <h3>Artist Name</h3>
                     <h5>Art Work name, 04/10/1999</h5>
                 </div>
                 <div class="available-works-item">
-                    <img src="http://orenda.local/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
+                    <img src="/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
+                    <h3>Artist Name</h3>
+                    <h5>Art Work name, 04/10/1999</h5>
+                </div>
+
+                <div class="available-works-item">
+                    <img src="/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
+                    <h3>Artist Name</h3>
+                    <h5>Art Work name, 04/10/1999</h5>
+                </div>
+                <div class="available-works-item">
+                    <img src="/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
+                    <h3>Artist Name</h3>
+                    <h5>Art Work name, 04/10/1999</h5>
+                </div>
+                <div class="available-works-item">
+                    <img src="/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
+                    <h3>Artist Name</h3>
+                    <h5>Art Work name, 04/10/1999</h5>
+                </div>
+
+                <div class="available-works-item">
+                    <img src="/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
+                    <h3>Artist Name</h3>
+                    <h5>Art Work name, 04/10/1999</h5>
+                </div>
+                <div class="available-works-item">
+                    <img src="/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
+                    <h3>Artist Name</h3>
+                    <h5>Art Work name, 04/10/1999</h5>
+                </div>
+                <div class="available-works-item">
+                    <img src="/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
                     <h3>Artist Name</h3>
                     <h5>Art Work name, 04/10/1999</h5>
                 </div>

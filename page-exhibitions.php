@@ -27,14 +27,14 @@
         </article>
 
         <article class="exhibitions-presentation-full-image">
-            <img src="http://orenda.local/wp-content/uploads/2020/11/balm_couv_reduze.jpg" alt="">
+            <img src="/wp-content/uploads/2020/11/balm_couv_reduze.jpg" alt="">
         </article>
 
         <article class="exhibitions-presentation-four-images">
-            <img src="http://orenda.local/wp-content/uploads/2020/11/balm_couv_reduze.jpg" alt="">
-            <img src="http://orenda.local/wp-content/uploads/2020/11/balm_couv_reduze.jpg" alt="">
-            <img src="http://orenda.local/wp-content/uploads/2020/11/balm_couv_reduze.jpg" alt="">
-            <img src="http://orenda.local/wp-content/uploads/2020/11/balm_couv_reduze.jpg" alt="">
+            <img src="/wp-content/uploads/2020/11/balm_couv_reduze.jpg" alt="">
+            <img src="/wp-content/uploads/2020/11/balm_couv_reduze.jpg" alt="">
+            <img src="/wp-content/uploads/2020/11/balm_couv_reduze.jpg" alt="">
+            <img src="/wp-content/uploads/2020/11/balm_couv_reduze.jpg" alt="">
         </article>
 
         <article class="article-introduction">

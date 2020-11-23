@@ -4,11 +4,11 @@
     <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide">
-            <img src="http://orenda.local/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
+            <img src="/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
             <p>"René Magritte et sa femme", Magritte.</p>
         </div>
         <div class="swiper-slide">
-            <img src="http://orenda.local/wp-content/uploads/2020/11/balm_couv_reduze.jpg" alt="">
+            <img src="/wp-content/uploads/2020/11/balm_couv_reduze.jpg" alt="">
             <p>"René Magritte et sa femme", Magritte.</p>
         </div>
     </div>
