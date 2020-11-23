@@ -15,6 +15,18 @@
     }
 }
 
+.swiper-container-hero {
+    .swiper-slide {
+        img {
+            position: absolute;
+        }
+
+        .hero-information {
+            position: absolute;
+        }
+    }
+}
+
 .swiper-button-prev,
 .swiper-button-next {
     color: $grisFonce;

@@ -2,7 +2,6 @@
     #main {
         article {
             gap: 8% 2%;
-            margin: 0 0 $ratio 0;
 
             @include grid( repeat(2, 1fr), auto, repeat(1, 1fr), auto );
 

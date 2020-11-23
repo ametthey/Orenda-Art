@@ -1,20 +1,40 @@
 .container-home-introduction {
-    .swiper-container {
-        height: 100%;
-        width: 90vw;
+    // height: 100vh;
+    // width: 100vw;
 
-        .swiper-wrapper {
-            background-color: red;
-            height: 100%;
-            width: 100%;
-        }
+    // .swiper-container-hero {
+    //     height: auto;
+    //     overflow: hidden;
+    //     margin: auto;
+    //     width: 80%;
+    //
+    //     .swiper-wrapper {
+    //         background-color: red;
+    //         height: 100%;
+    //         width: 100%;
+    //
+    //         .swiper-slide {
+    //             height: 850px;
+    //             width: inherit;
+    //
+    //             @include flex(center, center, column, center, center, column);
+    //
+    //             img {
+    //                 height: 100%;
+    //             }
+    //         }
+    //     }
+    //
+    // }
+}
 
-        .swiper-slide {
-            height: inherit;
-            width: inherit;
+.hero-information {
+    bottom: 10%;
 
-            @include flex(center, center, column, center, center, column);
-        }
+    h3 {
+        font-family: $font1;
+        font-style: italic;
+        font-weight: 400;
     }
 }
 
@@ -27,3 +47,4 @@
         gap: 2% 2%;
     }
 }
+

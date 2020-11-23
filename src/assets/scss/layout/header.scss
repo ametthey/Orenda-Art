@@ -9,8 +9,9 @@
 }
 
 #masthead {
-    @include flex(flex-start, center, column, flex-start, center, column);
+    @include flex(flex-start, center, column, flex-start, space-between, row);
     flex-direction: column;
+    padding: $ratio calc( #{$ratio} * 2 ) 0;
 }
 
 .site-branding {
@@ -62,14 +63,14 @@
 **************************/
 #site-navigation-mobile {
     align-items: center;
-    background-color: red;
+    background-color: $bg;
     display: none;
     height: 100vh;
     justify-content: center;
     position: fixed;
     top: 0;
     width: 100vw;
-    z-index: 1000;
+    z-index: 9;
 
     &.is-active {
         display: flex;

@@ -1,3 +1,7 @@
+// @mixin ratio($number) {
+//
+// }
+
 @mixin font1($weight, $size: 1rem) {
     font-family: $font1;
     font-weight: $weight;
@@ -6,7 +10,7 @@
 
 @mixin font2() {
     font-family: $font2;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 @mixin link($color, $decoration) {

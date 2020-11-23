@@ -28,8 +28,8 @@ html {
 
 body {
     height: 100%;
-    margin: 0;
     padding: 0;
+    margin: 0;
     width: 100%;
 }
 
@@ -71,8 +71,9 @@ a {
  * without header & footer
  */
 #content {
-    height: 100%;
+    height: auto;
     position: relative;
+    padding: 0 calc( #{$ratio} * 2);
     width: 100%;
 
     @include grid( repeat(3,1fr) , repeat(3,1fr) , 1fr, auto);

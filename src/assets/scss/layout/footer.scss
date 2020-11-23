@@ -7,8 +7,13 @@
 footer {
     @include flex(center, center, row, center, center, column);
     background-color: $bleuClair;
-    height: 450px;
+    height: auto;
+    margin: calc( #{$ratio} * 2 ) 0 0 0;
     width: 100%;
+
+    @include respond(tablet) {
+        margin: calc( #{$ratio} * 2 ) 0 0 0;
+    }
 }
 
 .footer-container {
@@ -16,18 +21,36 @@ footer {
     height: auto;
     margin: 83px auto 150px auto;
     width: 70%;
+
+    @include respond(tablet) {
+        margin: $ratio;
+        width: calc( 100% - calc(#{$ratio} * 2) );
+    }
 }
 
 .footer-item {
     margin: 0 80px 0 0;
     width: auto;
 
+    @include respond(tablet) {
+        margin: 0 0 $ratio 0;
+        text-align: center;
+    }
+
     &:last-child {
         width: 234px;
+
+        @include respond(tablet) {
+            width: 90%;
+        }
     }
 
     h2 {
         margin: 0 0 61px 0;
+
+        @include respond(tablet) {
+            margin: 0;
+        }
     }
 
     h2,
@@ -39,5 +62,10 @@ footer {
     .maps {
         height: 234px;
         width: 234px;
+
+        @include respond(tablet) {
+            height: 400px;
+            width: 100%;
+        }
     }
 }

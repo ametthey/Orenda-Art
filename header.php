@@ -40,6 +40,15 @@
                     <div class="site-navigation-langue">FR/ENG</div>
                 </nav>
 
+                <!-- Mobile navigation -->
+                <nav id="site-navigation-mobile" class="main-navigation" role="navigation">
+                    <?php
+                        $args = [
+                            'theme_location'    => 'header-menu',
+                        ];
+                        wp_nav_menu( $args );
+                    ?>
+               </nav>
 
                <!-- Hamburger menu for tablet and mobile navigation -->
                <button class="hamburger hamburger--collapse" type="button">
@@ -51,17 +60,6 @@
 
             </header>
 
-            <!-- Mobile navigation -->
-            <nav id="site-navigation-mobile" class="main-navigation" role="navigation">
-                <?php
-                    $args = [
-                        'theme_location'    => 'header-menu',
-                    ];
-                    wp_nav_menu( $args );
-                ?>
-
-                <button>close</button>
-           </nav>
 
             <div id="content" class="site-content">
 

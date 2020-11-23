@@ -1,23 +1,37 @@
-.page-template-page-available-works {
-    #main {
-        article {
-            gap: 8% 2%;
+.available-works-presentation {
+    h6 {
+        color: $bleuClair;
+        width: 55%;
 
-            &:first-child {
-                @include grid(repeat(1, 1fr), auto, repeat(1, 1fr), auto);
-            }
-
-            @include grid(repeat(3, 1fr), auto, repeat(2, 1fr), auto);
-
-            @include respond(tablet) {
-                gap: 2% 2%;
-            }
-
-            h5 {
-                font-family: $font1;
-            }
-
+        @include respond(tablet) {
+            width: 100%;
         }
-
     }
 }
+
+.available-works-grid {
+    gap: 80px 25px;
+
+    &:first-child {
+        @include grid(repeat(1, 1fr), auto, repeat(1, 1fr), auto);
+    }
+
+    @include grid(repeat(3, 1fr), auto, repeat(2, 1fr), auto);
+
+    @include respond(tablet) {
+        gap: 80px 25px;
+    }
+
+    .available-works-item {
+        h3 {
+            margin: 10px 0 0 0;
+        }
+
+        h5 {
+            font-family: $font1;
+            color: $color4;
+        }
+    }
+
+}
+

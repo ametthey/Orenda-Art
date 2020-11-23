@@ -10,6 +10,21 @@ img {
     max-width: 100%;
 }
 
+.article-introduction {
+    margin: $ratio 0;
+
+    &:first-child {
+        margin: 0 0 $ratio 0;
+    }
+}
+
+.entry-header {
+    h4 {
+        font-family: $font1;
+        margin: 0 0 15px 0;
+    }
+}
+
 // all links in yellow on the site
 .item-link {
     @include link( $beige, underline );
