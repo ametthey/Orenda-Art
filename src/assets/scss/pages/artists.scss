@@ -6,9 +6,9 @@
 
 .container-artist-list {
     @include grid(repeat(4, 1fr), auto, repeat(2, 1fr), auto);
-    gap: 8% 2%;
+    gap: 30px 1.5%;
     @include respond(tablet) {
-        gap: 2% 2%;
+        gap: 1% 1%;
     }
 }
 

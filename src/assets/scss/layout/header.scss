@@ -11,7 +11,7 @@
 #masthead {
     @include flex(flex-start, center, column, flex-start, space-between, row);
     flex-direction: column;
-    padding: $ratio calc( #{$ratio} * 2 ) 0;
+    padding: $ratio calc( #{$ratio} * 3 ) 0;
 }
 
 .site-branding {

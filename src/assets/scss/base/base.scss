@@ -73,7 +73,7 @@ a {
 #content {
     height: auto;
     position: relative;
-    padding: 0 calc( #{$ratio} * 2);
+    padding: 0 calc( #{$ratio} * 3);
     width: 100%;
 
     @include grid( repeat(3,1fr) , repeat(3,1fr) , 1fr, auto);

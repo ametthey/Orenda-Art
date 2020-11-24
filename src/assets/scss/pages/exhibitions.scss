@@ -10,16 +10,19 @@
     @include flex(flex-start, center, column, center, center, column);
 
     h3 {
-        color: $bleuFonce;
+        color: $bleuClair;
         font-family: $font1;
+        margin: 0 0 10px 0;
     }
 
     .date {
         color: $color3;
+        font-size: $h5;
     }
 
     .presentation-informations {
         @include flex(center, space-between, row, center, center, column);
+        margin: 0 0 20px 0;
         width: 100%;
     }
 }

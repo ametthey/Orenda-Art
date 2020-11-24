@@ -34,10 +34,22 @@
     </article>
 
     <article>
-        <img src="http://orenda.local/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
-        <img src="http://orenda.local/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
-        <img src="http://orenda.local/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
-        <img src="http://orenda.local/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
+        <div class="individual-artist-item">
+            <img src="http://orenda.local/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
+            <p>Title, 2020, walnut, 35 x 24 x 24 inches, 88.9 x 61 x 61 cm.</p>
+        </div>
+        <div class="individual-artist-item">
+            <img src="http://orenda.local/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
+            <p>Title, 2020, walnut, 35 x 24 x 24 inches, 88.9 x 61 x 61 cm.</p>
+        </div>
+        <div class="individual-artist-item">
+            <img src="http://orenda.local/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
+            <p>Title, 2020, walnut, 35 x 24 x 24 inches, 88.9 x 61 x 61 cm.</p>
+        </div>
+        <div class="individual-artist-item">
+            <img src="http://orenda.local/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
+            <p>Title, 2020, walnut, 35 x 24 x 24 inches, 88.9 x 61 x 61 cm.</p>
+        </div>
     </article>
 
     <?php the_content(); ?>

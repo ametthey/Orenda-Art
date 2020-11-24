@@ -23,9 +23,11 @@
 
         </article>
 
-        <header class="entry-header">
-            <h4>Press Archive</h4>
-        </header>
+        <div class="article-introduction">
+            <header class="entry-header">
+                <h4>Press Archive</h4>
+            </header>
+        </div>
 
         <article id="container-press-text">
             <div class="entry-content container-press-item">

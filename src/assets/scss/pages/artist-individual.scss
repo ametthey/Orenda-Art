@@ -1,12 +1,12 @@
 .single-artiste {
     #main {
         article {
-            gap: 8% 2%;
+            gap: 1.5% 1.5%;
 
             @include grid( repeat(2, 1fr), auto, repeat(1, 1fr), auto );
 
             @include respond(tablet) {
-                gap: 2% 2%;
+                gap: 1% 1%;
             }
         }
     }
@@ -15,5 +15,13 @@
 .artist-individual-presentation-text {
     h4 {
         color: $bleuClair;
+    }
+
+    p {
+        margin-top: 51px;
+
+        @include respond(tablet) {
+            margin-top: 0;
+        }
     }
 }

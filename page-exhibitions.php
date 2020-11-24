@@ -16,7 +16,7 @@
 
         <article class="exhibitions-presentation">
             <h2>Revelation de la lumiere</h2>
-            <h2>Maurizio Toffoletti,  sculptures </h3>
+            <h3>Maurizio Toffoletti,  sculptures </h3>
             <div class="presentation-informations">
                 <p class="date">4 Février - 16 Mars 2021</p>
                 <div class="presentation-informations-buttons">

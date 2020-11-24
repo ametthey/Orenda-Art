@@ -2,14 +2,25 @@
 #container-carousel-thumbnail-text,
 #container-press-text {
     @include grid(repeat(2, 1fr), auto, 1fr, auto);
-    gap: 8% 2%;
+    gap: 25px 25px;
     @include respond(tablet) {
-        gap: 2% 2%;
+        gap: 25px 25px;
     }
 }
 
 #container-press-text {
-    gap: 12% 12%;
+    gap: 5% 11%;
+}
+
+.container-press,
+.container-press-item {
+    h2 {
+        margin-bottom: 10px;
+    }
+
+    .press-item-texte {
+        margin-top: 10px;
+    }
 }
 
 

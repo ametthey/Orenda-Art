@@ -17,29 +17,26 @@ let swiperSettings = {
 };
 
 carouselThumbnail.forEach( ( container ) => {
+    let mySwiperThumbs = new Swiper( '.thumb', {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+    });
     let mySwiperFull = new Swiper( '.full', {
-        direction: 'horizontal',
-        loop: true,
         speed: 900,
+        spaceBetween: 10,
 
-        thumbs: {
-            swiper: mySwiperThumbs
-        },
         // Navigation arrows
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
+        thumbs: {
+            swiper: mySwiperThumbs
+        },
 
-    });
-    let mySwiperThumbs = new Swiper( '.thumb', {
-        loop: true,
-        direction: 'horizontal',
-        spaceBetween: 4,
-        slidesPerView: 3,
-        freeMode: true,
-        watchSlidesVisibility: true,
-        watchSlidesProgress: true
     });
 });
 
