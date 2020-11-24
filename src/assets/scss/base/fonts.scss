@@ -5,6 +5,40 @@
 // Adobe Hebrew Bold
 @import url("https://use.typekit.net/esb2mot.css");
 
+@import url("https://p.typekit.net/p.css?s=1&k=esb2mot&ht=tk&f=21536.21537.21538.21539&a=43334987&app=typekit&e=css");
+
+@font-face {
+    font-family:"adobe-hebrew-bold";
+    src:url("https://use.typekit.net/af/1a1afb/000000000000000000014f57/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff2"),url("https://use.typekit.net/af/1a1afb/000000000000000000014f57/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff"),url("https://use.typekit.net/af/1a1afb/000000000000000000014f57/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("opentype");
+    font-display:auto;
+    font-style:normal;
+    font-weight:600;
+}
+
+@font-face {
+    font-family:"adobe-hebrew-bold-italic";
+    src:url("https://use.typekit.net/af/cadf38/000000000000000000014f58/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3") format("woff2"),url("https://use.typekit.net/af/cadf38/000000000000000000014f58/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3") format("woff"),url("https://use.typekit.net/af/cadf38/000000000000000000014f58/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3") format("opentype");
+    font-display:auto;
+    font-style:italic;
+    font-weight:600;
+}
+
+@font-face {
+    font-family:"adobe-hebrew-italic";
+    src:url("https://use.typekit.net/af/ce698a/000000000000000000014f59/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"),url("https://use.typekit.net/af/ce698a/000000000000000000014f59/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"),url("https://use.typekit.net/af/ce698a/000000000000000000014f59/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
+    font-display:auto;
+    font-style:italic;
+    font-weight:400;
+}
+
+@font-face {
+    font-family:"adobe-hebrew";
+    src:url("https://use.typekit.net/af/9e2523/000000000000000000014f5a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/9e2523/000000000000000000014f5a/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/9e2523/000000000000000000014f5a/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+    font-display:auto;
+    font-style:normal;
+    font-weight:400;
+}
+
 // Montserrat Regular
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
