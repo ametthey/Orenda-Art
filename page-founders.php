@@ -31,7 +31,7 @@
 
         <article class="container-founders-history">
 
-            <?php get_template_part( 'template-parts/sliders/carousel', 'thumbnails' ); ?>
+            <?php get_template_part( 'template-parts/sliders/carousel', 'solo' ); ?>
 
             <div class="entry-content container-press">
                 <h2>Galerie du XXème siècle</h2>
@@ -55,7 +55,7 @@ Elle présente en priorité les artistes qui savent faire passer le souffle des 
 
         <article class="container-founders-history">
 
-            <?php get_template_part( 'template-parts/sliders/carousel', 'thumbnails' ); ?>
+            <?php get_template_part( 'template-parts/sliders/carousel', 'solo' ); ?>
 
             <div class="entry-content container-press">
                 <h2>San Lazarro</h2>

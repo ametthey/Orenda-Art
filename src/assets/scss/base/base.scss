@@ -77,27 +77,6 @@ a {
     position: relative;
     padding: 0 calc( #{$ratio} * 3);
     width: 100%;
-
-    @include grid( repeat(3,1fr) , repeat(3,1fr) , 1fr, auto);
-    grid-template-areas:
-        'main main main'
-        'main main main'
-        'main main main';
-
-    @include respond(tablet) {
-        padding: 0 $mratio;
-        grid-template-areas:
-            'main'
-    }
-
-
-    #primary {
-        grid-area: main;
-    }
-
-    #secondary {
-        grid-area: sidebar;
-    }
 }
 
 /*
@@ -113,4 +92,6 @@ a {
  * without sidebar
  */
 #main {
+    height: 100%;
+    width: 100%;
 }

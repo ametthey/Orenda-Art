@@ -1,8 +1,8 @@
 // import Swiper bundle with all modules installed
 import Swiper from 'swiper/bundle';
 
-const carouselThumbnail = document.querySelectorAll('.carousel-thumbnails');
-const swiperContainersHero = document.querySelectorAll('.swiper-container');
+const carouselThumbnail = document.querySelectorAll('.container-home-introduction');
+const swiperContainersHero = document.querySelectorAll('.hero');
 
 let swiperSettings = {
     directon: 'vertical',
@@ -44,7 +44,7 @@ carouselThumbnail.forEach( ( container ) => {
 
 
 swiperContainersHero.forEach( ( container ) => {
-    let myHeroSwiper = new Swiper( '.swiper-container', swiperSettings );
+    let myHeroSwiper = new Swiper( '.hero', swiperSettings );
     console.log(container);
 });
 

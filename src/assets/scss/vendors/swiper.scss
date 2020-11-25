@@ -4,7 +4,7 @@
 .swiper-container {
     height: auto;
     margin: auto;
-    width: 50vw;
+    width: 100%;
 
     @include respond(tablet) {
         width: calc( 100vw - calc( #{$mratio} * 2 ) );
@@ -19,8 +19,14 @@
     }
 }
 
-.swiper-container-hero {
+.hero {
+    width: calc( 100vw - calc(#{$ratio} * 2));
     .swiper-slide {
+        color: $grisFonce;
+
+        @include flex(flex-start, center, column, flex-start, center, column);
+        flex-direction: column;
+
         img {
             position: absolute;
         }

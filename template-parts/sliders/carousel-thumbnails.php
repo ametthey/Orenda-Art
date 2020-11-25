@@ -13,10 +13,6 @@
                 <img src="/wp-content/uploads/2020/11/balm_couv_reduze.jpg" alt="">
                 <p>"René Magritte et sa femme", Magritte.</p>
             </div>
-            <div class="swiper-slide">
-                <img src="/wp-content/uploads/2020/11/tonyabeyta-galerieorenda.jpg" alt="">
-                <p>"René Magritte et sa femme", Magritte.</p>
-            </div>
         </div>
 
         <!-- If we need navigation buttons -->
@@ -35,9 +31,6 @@
             </div>
             <div class="swiper-slide">
                 <img src="/wp-content/uploads/2020/11/balm_couv_reduze.jpg" alt="">
-            </div>
-            <div class="swiper-slide">
-                <img src="/wp-content/uploads/2020/11/tonyabeyta-galerieorenda.jpg" alt="">
             </div>
         </div>
 

@@ -32,7 +32,7 @@
 **************************/
 
 #site-navigation-desktop {
-    margin: $ratio 0 calc( #{$ratio} * 1.25 ) 0;
+    margin: $ratio 0 calc( #{$ratio} * 2.25 ) 0;
     @include flex(center, space-between, row, flex-start, center, row);
     width: 100%;
 
@@ -55,6 +55,7 @@
     width: inherit;
 
     li {
+        font-weight: bold;
         padding: 0 1% 0 0;
         text-transform: uppercase;
 
