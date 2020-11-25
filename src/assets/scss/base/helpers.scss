@@ -20,12 +20,22 @@ img {
 
 .entry-header {
     h4 {
+        color: $color3;
         font-family: $font1;
         margin: 0 0 15px 0;
+    }
+
+    h6 {
+        color: $bleuClair;
     }
 }
 
 // all links in yellow on the site
 .item-link {
     @include link( $beige, underline );
+}
+
+// Opacity down to 0.3
+.have-opacity-down {
+    opacity: 0.3 !important;
 }

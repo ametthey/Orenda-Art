@@ -12,9 +12,15 @@
     @include flex(flex-start, center, column, flex-start, space-between, row);
     flex-direction: column;
     padding: $ratio calc( #{$ratio} * 3 ) 0;
+
+    @include respond(tablet) {
+        padding: $mratio;
+    }
 }
 
 .site-branding {
+    opacity: 1;
+    transition: opacity 0.725 ease-in-out;
     svg {
         height: 160px;
         max-width: 100%;
@@ -62,18 +68,35 @@
  * Navigation Mobile
 **************************/
 #site-navigation-mobile {
-    align-items: center;
-    background-color: $bg;
-    display: none;
+    align-items: flex-start;
+    background-color: $bleuClair;
+    display: flex;
     height: 100vh;
-    justify-content: center;
+    justify-content: flex-start;
     position: fixed;
+    right: 0;
     top: 0;
-    width: 100vw;
+    transform: translateX(48vw);
+    transition: transform 0.725s ease-in-out;
+    width: 48vw;
     z-index: 9;
 
     &.is-active {
-        display: flex;
+        transform: translateX(0);
+    }
+
+    #menu-header-1 {
+        margin: 26px 0 0 35px;
+
+        li {
+            margin-bottom: 26px;
+
+             a {
+                 color: $color3;
+                 font-weight: bold;
+                 text-transform: uppercase;
+             }
+        }
     }
 }
 

@@ -7,7 +7,7 @@
 }
 
 .exhibitions-presentation {
-    @include flex(flex-start, center, column, center, center, column);
+    @include flex(flex-start, center, column, flex-start, center, column);
 
     h3 {
         color: $bleuClair;
@@ -21,9 +21,15 @@
     }
 
     .presentation-informations {
-        @include flex(center, space-between, row, center, center, column);
+        @include flex(center, space-between, row, flex-start, center, column);
         margin: 0 0 20px 0;
         width: 100%;
+
+        .item-link {
+            &:first-child {
+                margin: 0 10px 0 0;
+            }
+        }
     }
 }
 

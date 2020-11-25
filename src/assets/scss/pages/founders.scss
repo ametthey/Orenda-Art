@@ -12,11 +12,10 @@
         margin: 0 0 20px 0;
     }
 
-    h3 {
-    }
-
     h6 {
         color: $bleuClair;
+        @include font1(300);
+        font-style: italic;
         margin: 30px 0;
     }
 
@@ -28,6 +27,14 @@
 
     @include respond(tablet) {
         gap: 2% 2%;
+    }
+
+    .container-press {
+        h5 {
+            color: $bleuClair;
+            @include font1(300, $h5);
+            line-height: $h5;
+        }
     }
 
 }

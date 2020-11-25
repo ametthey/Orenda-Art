@@ -6,6 +6,10 @@
     margin: auto;
     width: 50vw;
 
+    @include respond(tablet) {
+        width: calc( 100vw - calc( #{$mratio} * 2 ) );
+    }
+
     .swiper-slide {
         color: $grisFonce;
 
@@ -24,6 +28,7 @@
         .hero-information {
             position: absolute;
         }
+
     }
 }
 
@@ -42,5 +47,11 @@
         width: 25%;
         height: 100%;
         opacity: 0.4;
+    }
+}
+
+.swiper-slide {
+    p {
+        color: $bleuClair;
     }
 }

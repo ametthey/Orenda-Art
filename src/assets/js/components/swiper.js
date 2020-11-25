@@ -8,6 +8,7 @@ let swiperSettings = {
     directon: 'vertical',
     loop: true,
     speed: 900,
+    slidesPerView: 1,
 
     // Navigation arrows
     navigation: {
@@ -27,15 +28,16 @@ carouselThumbnail.forEach( ( container ) => {
     let mySwiperFull = new Swiper( '.full', {
         speed: 900,
         spaceBetween: 10,
+        slidesPerView: 1,
 
         // Navigation arrows
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
-        thumbs: {
-            swiper: mySwiperThumbs
-        },
+        // thumbs: {
+        //     swiper: mySwiperThumbs
+        // },
 
     });
 });
