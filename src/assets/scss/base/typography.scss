@@ -11,25 +11,18 @@ p {
     font-family: $font1;
 }
 
-html {
-    font-size: 100%;
-}
 
 body {
-    background-color: $bg;
-    color: $color1;
-    @include font1( 400 );
-    line-height: $lh;
 }
 
 
 h1, h2, h3, h4, h5, h6 {
     color: $grisFonce;
-    @include font2();
     line-height: $lh;
 }
 
 h1 {
+    font-family: $font1;
     font-size: $h1;
     line-height: $h1;
 
@@ -40,6 +33,7 @@ h1 {
 }
 
 h2 {
+    font-family: $font2;
     font-size: $h2;
     line-height: $h2;
 
@@ -50,6 +44,7 @@ h2 {
 }
 
 h3 {
+    font-family: $font2;
     font-size: $h3;
     line-height: $h3;
 
@@ -60,6 +55,7 @@ h3 {
 }
 
 h4 {
+    font-family: $font2;
     font-size: $h4;
     line-height: $h4;
 
@@ -70,6 +66,8 @@ h4 {
 }
 
 h5 {
+    color: $bleuClair;
+    font-family: $font1;
     font-size: $h5;
     line-height: $h5;
 
@@ -79,7 +77,15 @@ h5 {
     }
 }
 
+h6 {
+    color: $color3;
+    font-family: $font1;
+    font-size: $h6;
+    line-height: $h6;
+}
+
 small {
+    font-family: $font2;
     font-size: $small;
     line-height: $small;
 }

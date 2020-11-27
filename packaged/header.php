@@ -36,8 +36,6 @@
                         ];
                         wp_nav_menu( $args );
                     ?>
-
-                    <div class="site-navigation-langue">FR/ENG</div>
                 </nav>
 
                 <!-- Mobile navigation -->

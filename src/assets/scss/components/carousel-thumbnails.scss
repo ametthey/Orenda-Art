@@ -1,0 +1,37 @@
+// -----------------------------------------------------------------------------
+// This file contains basic style for Articles
+// -----------------------------------------------------------------------------
+
+.container-carousel-thumbnails {
+    @include grid( repeat(2, 1fr), auto, repeat(1, 1fr), auto );
+
+    gap: 25px;
+    margin: 0 0 calc( #{$ratio} * 2.25 ) 0;
+
+    &:last-child {
+        margin: 0 0 0 0;
+    }
+
+    @include respond(tablet) {
+        gap: 25px;
+    }
+}
+
+.swiper-slide {
+    p {
+        color: $bleuClair;
+        margin: calc( #{$ratio} / 8 ) 0 calc( #{$ratio} / 4 ) 0;
+    }
+}
+
+// Thumb Carousel
+.thumb {
+    height: 20%;
+    // box-sizing: border-box;
+
+    .swiper-slide {
+        width: 25%;
+        height: 100%;
+        opacity: 0.4;
+    }
+}

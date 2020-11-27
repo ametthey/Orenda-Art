@@ -4,11 +4,11 @@
   */
 ?>
 
-    <article class="article-introduction">
-        <header class="entry-header">
-            <h4>Title</h4>
-        </header>
-    </article>
+    <div class="chapter">
+        <h6 class="chapter-link"><?php esc_html_e( 'Site de l\'artiste', '_themename' ); ?></h6>
+        <h6 class="chapter-link"><?php esc_html_e( 'Oeuvres disponibles', '_themename' ); ?></h6>
+        <h6 class="chapter-link"><?php esc_html_e( 'Télécharger le CV', '_themename' ); ?></h6>
+    </div>
 
     <article id="artist-individual-presentation">
         <div class="artist-individual-presentation-image">
@@ -27,11 +27,11 @@
         </div>
     </article>
 
-    <article class="article-introduction">
-        <header class="entry-header">
-            <h4>Works</h4>
-        </header>
-    </article>
+
+    <!-- Chapter: Works -->
+    <div class="chapter">
+        <h6><?php esc_html_e( 'Works', '_themename' ); ?></h6>
+    </div>
 
     <article>
         <div class="individual-artist-item">

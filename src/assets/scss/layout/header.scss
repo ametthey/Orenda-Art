@@ -29,10 +29,10 @@
 
 /**************************
  * Navigation Desktop
-**************************/
+ **************************/
 
 #site-navigation-desktop {
-    margin: $ratio 0 calc( #{$ratio} * 2.25 ) 0;
+    margin: $ratio 0 0 0;
     @include flex(center, space-between, row, flex-start, center, row);
     width: 100%;
 
@@ -40,38 +40,42 @@
         display: none;
     }
 
-    .site-navigation-langue {
-        @include font1(700);
-        color: $beige;
-    }
-}
+    .main-navigation {
+        width: 100%;
 
-.main-navigation {
-    width: 80%;
-}
+        #menu-header {
+            @include flex(center, space-between, row, flex-start, center, row);
+            width: inherit;
 
-#menu-header {
-    @include flex(center, space-between, row, flex-start, center, row);
-    width: inherit;
+            li {
+                font-weight: bold;
+                text-transform: uppercase;
 
-    li {
-        font-weight: bold;
-        padding: 0 1% 0 0;
-        text-transform: uppercase;
+                &:last-child {
+                    a {
+                        color: $beige;
+                    }
+                }
 
-        &:last-child {
-            padding: 0 0 0 0;
+                &.current-menu-item {
+                    a {
+                        color: $bleuClair;
+                    }
+                }
+            }
         }
     }
+
 }
+
 
 /**************************
  * Navigation Mobile
-**************************/
+ **************************/
 #site-navigation-mobile {
     align-items: flex-start;
     background-color: $bleuClair;
-    display: flex;
+    display: none;
     height: 100vh;
     justify-content: flex-start;
     position: fixed;
@@ -81,6 +85,10 @@
     transition: transform 0.725s ease-in-out;
     width: 48vw;
     z-index: 9;
+
+    @include respond(tablet) {
+        display: flex;
+    }
 
     &.is-active {
         transform: translateX(0);
@@ -92,11 +100,11 @@
         li {
             margin-bottom: 26px;
 
-             a {
-                 color: $color3;
-                 font-weight: bold;
-                 text-transform: uppercase;
-             }
+            a {
+                color: $color3;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
         }
     }
 }

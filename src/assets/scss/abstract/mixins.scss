@@ -2,15 +2,16 @@
 //
 // }
 
-@mixin font1($weight, $size: 1rem) {
+@mixin font1($weight, $size: 1em) {
     font-family: $font1;
     font-weight: $weight;
     font-size: $size;
 }
 
-@mixin font2() {
+@mixin font2( $weight, $size: 1em ) {
     font-family: $font2;
-    font-weight: 300;
+    font-size: $size;
+    font-weight: $weight;
 }
 
 @mixin link($color, $decoration) {

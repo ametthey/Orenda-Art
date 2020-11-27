@@ -1,13 +1,6 @@
-.exhibitions-introduction {
-    margin: $ratio 0;
-
-    &:first-child {
-        margin: 0;
-    }
-}
-
 .exhibitions-presentation {
     @include flex(flex-start, center, column, flex-start, center, column);
+    margin: $ratio 0;
 
     h3 {
         color: $bleuClair;
@@ -15,19 +8,16 @@
         margin: 0 0 10px 0;
     }
 
-    .date {
-        color: $color3;
-        font-size: $h5;
-    }
-
-    .presentation-informations {
-        @include flex(center, space-between, row, flex-start, center, column);
-        margin: 0 0 20px 0;
+    .exhibitions-links {
+        @include flex(center, flex-start, row, flex-start, center, column);
         width: 100%;
 
         .item-link {
-            &:first-child {
-                margin: 0 10px 0 0;
+            color: $beige;
+            margin: 0 $ratio 0 0;
+
+            &:hover {
+                text-decoration: underline;
             }
         }
     }

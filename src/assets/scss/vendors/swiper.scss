@@ -19,45 +19,9 @@
     }
 }
 
-.hero {
-    width: calc( 100vw - calc(#{$ratio} * 2));
-    .swiper-slide {
-        color: $grisFonce;
-
-        @include flex(flex-start, center, column, flex-start, center, column);
-        flex-direction: column;
-
-        img {
-            position: absolute;
-        }
-
-        .hero-information {
-            position: absolute;
-        }
-
-    }
-}
-
 .swiper-button-prev,
 .swiper-button-next {
     color: $grisFonce;
 }
 
 
-.thumb {
-    height: 20%;
-    box-sizing: border-box;
-    padding: 10px 0;
-
-    .swiper-slide {
-        width: 25%;
-        height: 100%;
-        opacity: 0.4;
-    }
-}
-
-.swiper-slide {
-    p {
-        color: $bleuClair;
-    }
-}

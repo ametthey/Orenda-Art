@@ -27,11 +27,23 @@ html {
 }
 
 body {
-    font-size: 2vw;
+    background-color: $bg;
+    background-image: url( '/wp-content/uploads/header_illustration.jpg' );
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    color: $color1;
+    font-family: $font1;
+    font-size: $p;
     height: 100%;
-    padding: 0;
+    line-height: $lh;
     margin: 0;
+    padding: 0;
     width: 100%;
+
+    @include respond(tablet) {
+        background-image: none;
+    }
 }
 
 img {

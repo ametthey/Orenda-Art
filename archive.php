@@ -3,12 +3,10 @@
 <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
 
-        <div class="article-introduction">
-            <header class="entry-header">
-                <h4>Artistes</h4>
-            </header>
+        <!-- Chapter: Les artistes -->
+        <div class="chapter">
+            <h6><?php esc_html_e( 'Les artistes', '_themename' ); ?></h6>
         </div>
-
 
         <article class="container-artist-list">
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>

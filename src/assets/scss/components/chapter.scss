@@ -1,0 +1,17 @@
+.chapter {
+    @include flex(center, flex-start, row, center, flex-start, column);
+    margin: $ratio 0;
+
+    h6 {
+        margin: 0 calc( #{$ratio} * 3 ) 0 0;
+
+        &.chapter-link {
+            color: $beige;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+}

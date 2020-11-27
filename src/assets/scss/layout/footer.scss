@@ -7,8 +7,12 @@
 footer {
     @include flex(center, space-around, row, center, center, column);
     background-color: $bleuClair;
+    background-image: url('/wp-content/uploads/footer_bandeau.jpg');
+    background-repeat: repeat-x;
+    background-size: 70%;
+    background-position: top;
     height: 450px;
-    margin-top: calc( #{$ratio} * 3 );
+    margin-top: calc( #{$ratio} * 4 );
     padding: calc( #{$ratio} * 3 );
     width: 100%;
 
