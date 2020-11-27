@@ -13,7 +13,7 @@
     <article id="artist-individual-presentation">
         <div class="artist-individual-presentation-image">
             <?php //the_post_thumbnail( 'thumbnail' ); ?>
-            <img src="http://orenda.local/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
+            <img src="/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
             <p>"René Magritte et sa femme", Magritte.</p>
         </div>
 
@@ -35,19 +35,19 @@
 
     <article>
         <div class="individual-artist-item">
-            <img src="http://orenda.local/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
+            <img src="/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
             <p>Title, 2020, walnut, 35 x 24 x 24 inches, 88.9 x 61 x 61 cm.</p>
         </div>
         <div class="individual-artist-item">
-            <img src="http://orenda.local/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
+            <img src="/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
             <p>Title, 2020, walnut, 35 x 24 x 24 inches, 88.9 x 61 x 61 cm.</p>
         </div>
         <div class="individual-artist-item">
-            <img src="http://orenda.local/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
+            <img src="/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
             <p>Title, 2020, walnut, 35 x 24 x 24 inches, 88.9 x 61 x 61 cm.</p>
         </div>
         <div class="individual-artist-item">
-            <img src="http://orenda.local/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
+            <img src="/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
             <p>Title, 2020, walnut, 35 x 24 x 24 inches, 88.9 x 61 x 61 cm.</p>
         </div>
     </article>
