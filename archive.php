@@ -9,7 +9,16 @@
         </div>
 
         <article class="container-artist-list">
-        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+        <?php
+            $args = array(
+                'post_type'      => 'artiste',
+                'posts_per_page' => -1,
+            );
+
+            $home_projects = new WP_Query( $args );
+
+            if ( $home_projects->have_posts() ) : while ( $home_projects->have_posts() ) : $home_projects->the_post();
+        ?>
 
             <div class="artist-thumbnail" id="artist-<?php the_ID(); ?>">
                 <?php echo get_the_post_thumbnail( $page->ID, 'full' ); ?>
@@ -17,9 +26,9 @@
             </div>
 
 
-        <?php endwhile; endif;  ?>
+        <?php endwhile; endif; wp_reset_postdata(); ?> <!-- WP_Query for CPT project -->
 
-        <?php echo paginate_links(); ?>
+
         </article>
 
     </main>

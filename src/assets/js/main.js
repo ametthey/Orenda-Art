@@ -4,7 +4,7 @@ import './components/swiper.js';
 
 // Hamburger Menu
 // https://jonsuh.com/hamburgers/
-const hamburgerButton = document.querySelector('button.hamburger');
+const hamburgerButton = document.querySelector('.hamburger');
 const navigationMobile = document.querySelector('#site-navigation-mobile');
 const content = document.querySelector('#content');
 const headerLogo = document.querySelector('.site-branding');

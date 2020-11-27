@@ -5,7 +5,7 @@
  * *************************************************/
 
 footer {
-    @include flex(center, space-around, row, center, center, column);
+    @include flex(center, space-around, row, flex-start, space-evenly, column);
     background-color: $bleuClair;
     background-image: url('/wp-content/uploads/footer_bandeau.jpg');
     background-repeat: repeat-x;
@@ -17,7 +17,7 @@ footer {
     width: 100%;
 
     @include respond(tablet) {
-        flex-wrap: wrap;
+        background-size: 150%;
         height: 100%;
         padding: $ratio;
 
@@ -28,7 +28,8 @@ footer {
     height: 200px;
 
     @include respond(tablet) {
-        width: 50%;
+        height: auto;
+        width: 100%;
     }
 
 
@@ -36,19 +37,19 @@ footer {
         width: 234px;
 
         @include respond(tablet) {
-            width: 90%;
+            width: 100%;
         }
     }
 
-    h2 {
-        margin: 0 0 61px 0;
-
-        @include respond(tablet) {
-            margin: 0;
-        }
+    h3 {
+        font-family: $font1;
     }
 
-    h2,
+    p {
+        margin: calc( #{$ratio} / 8 ) 0 calc( #{$ratio} / 4 ) 0;
+    }
+
+    h3,
     a,
     p {
         color: $bg;

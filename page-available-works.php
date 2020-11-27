@@ -8,12 +8,10 @@
 
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-            <article class="article-introduction">
-                <header class="entry-header">
-                    <?php the_title( '<h4>', '</h4>' ); ?>
-                    <h6>Les oeuvres suivantes sont disponibles à la galerie en permanence. pour plus d’informations, veuillez contacter la galerie par téléphone ou email.</h6>
-                </header>
-            </article>
+            <div class="chapter available-works">
+                <h6><?php esc_html_e( 'Oeuvres disponibles' , '_themename' ); ?></h6>
+                <p>Les oeuvres suivantes sont disponibles à la galerie en permanence. pour plus d’informations, veuillez contacter la galerie par téléphone ou email.</p>
+            </div>
 
             <article class="available-works-grid">
                 <div class="available-works-item">

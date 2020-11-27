@@ -8,6 +8,17 @@
     }
 }
 
+.container-press-item {
+    p {
+        &.press-item-date {
+            margin: 0 0 calc( #{$ratio} / 4 ) 0;
+        }
+        &:last-child {
+            margin: calc( #{$ratio} / 4 ) 0 0 0;
+        }
+    }
+}
+
 #container-press-text {
     gap: 5% 11%;
 }
@@ -18,9 +29,6 @@
         margin-bottom: 10px;
     }
 
-    .press-item-texte {
-        margin-top: 10px;
-    }
 }
 
 

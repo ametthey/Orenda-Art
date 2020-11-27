@@ -1,0 +1,40 @@
+@import "node_modules/hamburgers/_sass/hamburgers/hamburgers";
+
+.hamburger {
+    display: none;
+
+    @include respond(tablet) {
+        display: block;
+        z-index: 10;
+    }
+}
+
+#masthead {
+    .hamburger {
+        .hamburger-inner {
+            background-color: $color2;
+
+            &:after {
+                background-color: $color2;
+            }
+
+            &:before {
+                background-color: $color2;
+            }
+        }
+
+        &.is-active {
+            .hamburger-inner {
+                background-color: $color3;
+
+                &:after {
+                    background-color: $color3;
+                }
+
+                &:before {
+                    background-color: $color3;
+                }
+            }
+        }
+    }
+}

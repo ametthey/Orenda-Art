@@ -1,8 +1,9 @@
 .chapter {
-    @include flex(center, flex-start, row, center, flex-start, column);
+    @include flex(center, flex-start, row, flex-start, flex-start, column);
     margin: $ratio 0;
 
     h6 {
+        font-weight: lighter;
         margin: 0 calc( #{$ratio} * 3 ) 0 0;
 
         &.chapter-link {
@@ -12,6 +13,19 @@
                 text-decoration: underline;
             }
         }
+    }
+
+    &.available-works {
+        @include flex(flex-start, flex-start, column, flex-start, flex-start, column);
+
+        p {
+            margin: calc( #{$ratio} / 8 ) 0 0 0;
+            width: 55%;
+
+            @include respond(tablet) {
+                width: 100%;
+            }
+         }
     }
 
 }

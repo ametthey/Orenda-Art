@@ -12,11 +12,11 @@
 .available-works-grid {
     gap: 80px 25px;
 
-    &:first-child {
-        @include grid(repeat(1, 1fr), auto, repeat(1, 1fr), auto);
-    }
+    // &:first-child {
+    //     @include grid(repeat(1, 1fr), auto, repeat(1, 1fr), auto);
+    // }
 
-    @include grid(repeat(3, 1fr), auto, repeat(2, 1fr), auto);
+    @include grid(repeat(3, 1fr), auto, repeat(1, 1fr), auto);
 
     @include respond(tablet) {
         gap: 80px 25px;

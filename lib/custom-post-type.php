@@ -38,7 +38,7 @@ function _themename_artiste_custom_post_type() {
 		'labels' => $labels,
 		'menu_icon' => 'dashicons-admin-users',
         'supports' => array('title', 'editor', 'excerpt', 'thumbnail', 'revisions', 'author', 'comments', 'trackbacks', 'page-attributes', 'post-formats', 'custom-fields'),
-		'taxonomies' => array(),
+		'taxonomies' => array( 'categoriedelartiste' ),
 		'public' => true,
 		'show_ui' => true,
 		'show_in_menu' => true,

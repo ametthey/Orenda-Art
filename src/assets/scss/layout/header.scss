@@ -14,6 +14,7 @@
     padding: $ratio calc( #{$ratio} * 3 ) 0;
 
     @include respond(tablet) {
+        border-bottom: 1px solid $color2;
         padding: $mratio;
     }
 }
@@ -24,6 +25,10 @@
     svg {
         height: 160px;
         max-width: 100%;
+
+        @include respond(tablet) {
+            height: 54px;
+        }
     }
 }
 
@@ -81,9 +86,9 @@
     position: fixed;
     right: 0;
     top: 0;
-    transform: translateX(48vw);
+    transform: translateX(100%);
     transition: transform 0.725s ease-in-out;
-    width: 48vw;
+    width: 100%;
     z-index: 9;
 
     @include respond(tablet) {
@@ -94,8 +99,13 @@
         transform: translateX(0);
     }
 
+    .menu-header-container {
+        width: 100%;
+    }
+
     #menu-header-1 {
-        margin: 26px 0 0 35px;
+        margin: 23px;
+        width: 100%;
 
         li {
             margin-bottom: 26px;

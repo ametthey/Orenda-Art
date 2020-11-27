@@ -12,16 +12,16 @@
     }
 }
 
-.artist-individual-presentation-text {
-    h4 {
-        color: $bleuClair;
-    }
-
+#artist-individual-presentation {
     p {
-        margin-top: 51px;
-
-        @include respond(tablet) {
-            margin-top: 0;
-        }
+        color: $bleuClair;
+        margin: calc( #{$ratio} / 8 ) 0 calc( #{$ratio} / 4 ) 0;
     }
 }
+
+.individual-artist-item {
+    p {
+        margin: calc( #{$ratio} / 8 ) 0 calc( #{$ratio} / 4 ) 0;
+    }
+}
+

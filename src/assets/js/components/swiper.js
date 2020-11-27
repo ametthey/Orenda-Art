@@ -45,7 +45,6 @@ carouselThumbnail.forEach( ( container ) => {
 
 swiperContainersHero.forEach( ( container ) => {
     let myHeroSwiper = new Swiper( '.hero', swiperSettings );
-    console.log(container);
 });
 
 

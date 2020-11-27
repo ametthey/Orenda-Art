@@ -35,6 +35,7 @@ body {
     color: $color1;
     font-family: $font1;
     font-size: $p;
+    font-weight: 400;
     height: 100%;
     line-height: $lh;
     margin: 0;
@@ -89,6 +90,10 @@ a {
     position: relative;
     padding: 0 calc( #{$ratio} * 3);
     width: 100%;
+
+    @include respond(tablet) {
+        padding: 0 calc( #{$ratio} * 0.4 );
+    }
 }
 
 /*
