@@ -2,7 +2,7 @@
 // This file contains basic style for Articles
 // -----------------------------------------------------------------------------
 
-.container-carousel-thumbnails {
+.container-carousel {
     @include grid( repeat(2, 1fr), auto, repeat(1, 1fr), auto );
 
     gap: 25px;

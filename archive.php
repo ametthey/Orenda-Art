@@ -20,10 +20,12 @@
             if ( $home_projects->have_posts() ) : while ( $home_projects->have_posts() ) : $home_projects->the_post();
         ?>
 
+        <a href="<?php esc_url( the_permalink() ); ?>">
             <div class="artist-thumbnail" id="artist-<?php the_ID(); ?>">
                 <?php echo get_the_post_thumbnail( $page->ID, 'full' ); ?>
-                <h4><a href="<?php esc_url( the_permalink() );?>"><?php the_title(); ?></a></h4>
+                <h4><?php the_title(); ?></h4>
             </div>
+        </a>
 
 
         <?php endwhile; endif; wp_reset_postdata(); ?> <!-- WP_Query for CPT project -->

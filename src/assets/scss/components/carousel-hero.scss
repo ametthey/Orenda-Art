@@ -24,13 +24,27 @@
             transform: translateY( -20% );
             width: 100%;
 
+            @include respond(tablet) {
+                transform: translateY(0);
+            }
+
             h1 {
                 font-family: $font2;
+
+                @include respond(tablet) {
+                    font-size: $h5;
+                    line-height: $h5;
+                }
             }
 
             h3 {
                 font-family: $font1;
                 font-style: italic;
+
+                @include respond(tablet) {
+                    font-size: $h6;
+                    line-height: $h6;
+                }
             }
         }
 

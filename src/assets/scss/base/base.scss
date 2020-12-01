@@ -76,39 +76,64 @@ a {
 /*
  * Container wrapping the whole page
  */
-#page {
-    height: 100%;
+#page,
+#content,
+#primary,
+#main {
+    height: auto;
     width: 100%;
 }
 
-/*
- * Container for the main element and the sidebar
- * without header & footer
- */
+// #page {
+//     padding: $ratio;
+// }
+
 #content {
-    height: auto;
-    position: relative;
     padding: 0 calc( #{$ratio} * 3);
-    width: 100%;
 
     @include respond(tablet) {
         padding: 0 calc( #{$ratio} * 0.4 );
     }
 }
 
-/*
- * Container with sidebar
- */
-#primary {
-    height: inherit;
-    width: inherit;
-}
 
-/*
- * Container for main element
- * without sidebar
- */
-#main {
-    height: 100%;
-    width: 100%;
-}
+//
+//
+//
+//
+// #page {
+//     height: 100%;
+//     width: 100%;
+// }
+//
+// /*
+//  * Container for the main element and the sidebar
+//  * without header & footer
+//  */
+// #content {
+//     height: auto;
+//     position: relative;
+//     padding: 0 calc( #{$ratio} * 3);
+//     width: 100%;
+//
+//     @include respond(tablet) {
+//         padding: 0 calc( #{$ratio} * 0.4 );
+//     }
+// }
+//
+// /*
+//  * Container with sidebar
+//  */
+// #primary {
+//     height: inherit;
+//     width: inherit;
+// }
+//
+// /*
+//  * Container for main element
+//  * without sidebar
+//  */
+// #main {
+//     height: 100%;
+//     width: 100%;
+// }

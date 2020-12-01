@@ -1,12 +1,12 @@
 // import Swiper bundle with all modules installed
 import Swiper from 'swiper/bundle';
 
-const carouselThumbnail = document.querySelectorAll('.container-home-introduction');
+const carouselNormal = document.querySelectorAll('.container-carousel');
 const swiperContainersHero = document.querySelectorAll('.hero');
 
 let swiperSettings = {
     directon: 'vertical',
-    loop: true,
+    // loop: true,
     speed: 900,
     slidesPerView: 1,
 
@@ -17,29 +17,8 @@ let swiperSettings = {
     },
 };
 
-carouselThumbnail.forEach( ( container ) => {
-    let mySwiperThumbs = new Swiper( '.thumb', {
-        spaceBetween: 10,
-        slidesPerView: 3,
-        freeMode: true,
-        watchSlidesVisibility: true,
-        watchSlidesProgress: true,
-    });
-    let mySwiperFull = new Swiper( '.full', {
-        speed: 900,
-        spaceBetween: 10,
-        slidesPerView: 1,
-
-        // Navigation arrows
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        // thumbs: {
-        //     swiper: mySwiperThumbs
-        // },
-
-    });
+carouselNormal.forEach( ( container ) => {
+    let mySwiperFull = new Swiper( '.full', swiperSettings);
 });
 
 

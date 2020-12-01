@@ -14,7 +14,10 @@
             </div>
             <div class="swiper-slide">
                 <img src="/wp-content/uploads/2020/11/balm_couv_reduze.jpg" alt="">
-                <p>"René Magritte et sa femme", Magritte.</p>
+                <div class="hero-texte">
+                    <h1>Les Mondes Merveilleux</h1>
+                    <h3>4 Février - 16 Mars 2021</h3>
+                </div>
             </div>
         </div>
 
