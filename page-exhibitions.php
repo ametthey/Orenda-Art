@@ -8,26 +8,32 @@
 
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
+        <!-- Chapter: Exposition actuelle -->
+        <div class="chapter">
+            <h6><?php esc_html_e( 'Exposition actuelle', '_themename' ); ?></h6>
+        </div>
+
+        <?php get_template_part( 'template-parts/sliders/carousel', 'hero-exhibition' ); ?>
 
         <article class="exhibitions-presentation">
             <h2>Revelation de la lumiere - 4 Février - 16 Mars 2021</h2>
             <h3>Maurizio Toffoletti,  sculptures </h3>
-            <div class="exhibitions-links">
-                <a href="#"class="item-link">Download Invitation</a>
-                <a href="#"class="item-link">Download Press Release</a>
-            </div>
+            <!-- <div class="exhibitions&#45;links"> -->
+            <!--     <a href="#"class="item&#45;link">Download Invitation</a> -->
+            <!--     <a href="#"class="item&#45;link">Download Press Release</a> -->
+            <!-- </div> -->
         </article>
 
-        <article class="exhibitions-presentation-full-image">
-            <img src="/wp-content/uploads/2020/11/Aspect-ratio-4x3.svg_.png" alt="">
-        </article>
-
-        <article class="exhibitions-presentation-four-images">
-            <img src="/wp-content/uploads/2020/11/Aspect-ratio-4x3.svg_.png" alt="">
-            <img src="/wp-content/uploads/2020/11/Aspect-ratio-4x3.svg_.png" alt="">
-            <img src="/wp-content/uploads/2020/11/Aspect-ratio-4x3.svg_.png" alt="">
-            <img src="/wp-content/uploads/2020/11/Aspect-ratio-4x3.svg_.png" alt="">
-        </article>
+        <!-- <article class="exhibitions&#45;presentation&#45;full&#45;image"> -->
+        <!--     <img src="/wp&#45;content/uploads/2020/11/Aspect&#45;ratio&#45;4x3.svg_.png" alt=""> -->
+        <!-- </article> -->
+        <!--  -->
+        <!-- <article class="exhibitions&#45;presentation&#45;four&#45;images"> -->
+        <!--     <img src="/wp&#45;content/uploads/2020/11/Aspect&#45;ratio&#45;4x3.svg_.png" alt=""> -->
+        <!--     <img src="/wp&#45;content/uploads/2020/11/Aspect&#45;ratio&#45;4x3.svg_.png" alt=""> -->
+        <!--     <img src="/wp&#45;content/uploads/2020/11/Aspect&#45;ratio&#45;4x3.svg_.png" alt=""> -->
+        <!--     <img src="/wp&#45;content/uploads/2020/11/Aspect&#45;ratio&#45;4x3.svg_.png" alt=""> -->
+        <!-- </article> -->
 
         <!-- Chapter: Expositions passées -->
         <div class="chapter">

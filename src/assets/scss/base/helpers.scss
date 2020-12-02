@@ -12,7 +12,47 @@ img {
 
 // link in yellow
 .item-link {
+    // color: $beige;
+    color: $bleuClair;
+    margin: 20px 0 0 0;
+
+    @include respond(tablet) {
+        margin: 10px 0 0 0;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.read-more {
     color: $beige;
+    margin: 20px 0 0 0;
+
+    @include respond(tablet) {
+        margin: 10px 0;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.item-texte {
+    margin: 20px 0 0 0;
+
+    @include respond(tablet) {
+        margin: 10px 0 0 0;
+    }
+}
+
+.item-date {
+    // color: $beige;
+    margin: 20px 0 0 0;
+
+    @include respond(tablet) {
+        margin: 10px 0 0 0;
+    }
 
     &:hover {
         text-decoration: underline;

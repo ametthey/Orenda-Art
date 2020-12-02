@@ -9,8 +9,7 @@
 }
 
 #masthead {
-    @include flex(flex-start, center, column, flex-start, space-between, row);
-    flex-direction: column;
+    @include flex(flex-end, center, row, flex-start, space-between, row);
     padding: $ratio calc( #{$ratio} * 3 ) 0;
 
     @include respond(tablet) {
@@ -22,11 +21,22 @@
 .site-branding {
     opacity: 1;
     transition: opacity 0.725 ease-in-out;
+
     svg {
         height: 160px;
         max-width: 100%;
 
         @include respond(tablet) {
+            display: none;
+            height: 54px;
+        }
+    }
+
+    img {
+        display: none;
+
+        @include respond(tablet) {
+            display: block;
             height: 54px;
         }
     }
@@ -37,7 +47,7 @@
  **************************/
 
 #site-navigation-desktop {
-    margin: $ratio 0 0 0;
+    margin: 0 0 10px $ratio;
     @include flex(center, space-between, row, flex-start, center, row);
     width: 100%;
 
@@ -58,7 +68,7 @@
 
                 &:last-child {
                     a {
-                        color: $beige;
+                        // color: $beige;
                     }
                 }
 
@@ -99,11 +109,11 @@
         transform: translateX(0);
     }
 
-    .menu-header-container {
+    .menu-header-mobile-container {
         width: 100%;
     }
 
-    #menu-header-1 {
+    #menu-header-mobile {
         margin: 23px;
         width: 100%;
 

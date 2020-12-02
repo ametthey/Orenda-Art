@@ -1,34 +1,25 @@
-// Carousel with thumbnail and text
-#container-carousel-thumbnail-text,
 #container-press-text {
     @include grid(repeat(2, 1fr), auto, 1fr, auto);
-    gap: 25px 25px;
+    gap: calc( #{$ratio} * 2 ) calc( #{$ratio} * 1 );
+
     @include respond(tablet) {
         gap: 25px 25px;
     }
 }
 
 .container-press-item {
+    @include flex(flex-start, flex-start, column, flex-start, flex-start, column);
+
     p {
         &.press-item-date {
-            margin: 0 0 calc( #{$ratio} / 4 ) 0;
+            margin: calc( #{$ratio} / 4 ) 0 0 0;
         }
         &:last-child {
             margin: calc( #{$ratio} / 4 ) 0 0 0;
         }
     }
-}
 
-#container-press-text {
-    gap: 5% 11%;
-}
-
-.container-press,
-.container-press-item {
-    h2 {
-        margin-bottom: 10px;
+    .item-link {
+        color: $bleuClair;
     }
-
 }
-
-

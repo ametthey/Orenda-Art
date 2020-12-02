@@ -41,7 +41,7 @@
         <?php get_template_part( 'template-parts/sliders/carousel', 'thumbnails' ); ?>
 
         <!-- Component: Carousel with thumbnails - San Lazarro  -->
-        <?php get_template_part( 'template-parts/sliders/carousel', 'thumbnails' ); ?>
+        <?php get_template_part( 'template-parts/sliders/carousel', 'thumbnails-inverse' ); ?>
     </main>
 </div>
 

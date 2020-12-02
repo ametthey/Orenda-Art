@@ -33,6 +33,8 @@
     display: grid;
     grid-template-columns: $columns;
     grid-template-rows: $rows;
+    // height: 100%;
+    // width: 100%;
 
     @include respond(tablet) {
         grid-template-columns: $columnsSmall;

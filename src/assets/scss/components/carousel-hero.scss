@@ -18,7 +18,7 @@
 
         .hero-texte {
 
-            @include flex( center, flex-end, column, center, center, column );
+            @include flex( center, flex-end, column, center, flex-end, column );
             height: 100%;
             position: absolute;
             transform: translateY( -20% );
@@ -44,6 +44,7 @@
                 @include respond(tablet) {
                     font-size: $h6;
                     line-height: $h6;
+                    margin-bottom: 20px;
                 }
             }
         }

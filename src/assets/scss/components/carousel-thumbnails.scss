@@ -12,6 +12,13 @@
         margin: 0 0 0 0;
     }
 
+    .entry-content {
+        h5 {
+            font-size: $body2;
+            margin: 10px 0;
+        }
+    }
+
     @include respond(tablet) {
         gap: 25px;
     }

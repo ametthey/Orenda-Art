@@ -7,38 +7,28 @@
 
     <div class="footer-item">
         <h3><?php esc_html_e('Contact', '_themename'); ?></h3>
-        <p>
-            <a href="mailto:<?php esc_html_e('art@orenda-art.com', '_themename'); ?>">
-                <?php esc_html_e('art@orenda-art.com', '_themename'); ?>
-            </a>
-        </p>
-        <p>
-            <a href="tel:<?php esc_html_e('+33 1 49 26 90 09', '_themename'); ?>)">
-                <?php esc_html_e('+33 1 49 26 90 09', '_themename'); ?>
-            </a>
-        </p>
-        <p>
-            <a href="tel:<?php esc_html_e('+33 6 73 79 45 18', '_themename'); ?>">
-                <?php esc_html_e('+33 6 73 79 45 18', '_themename'); ?>
-            </a>
-        </p>
+        <a href="mailto:<?php esc_html_e('art@orenda-art.com', '_themename'); ?>">
+            <?php esc_html_e('art@orenda-art.com', '_themename'); ?>
+        </a>
+        <a href="tel:<?php esc_html_e('+33 1 49 26 90 09', '_themename'); ?>)">
+            <?php esc_html_e('+33 1 49 26 90 09', '_themename'); ?>
+        </a>
+        <a href="tel:<?php esc_html_e('+33 6 73 79 45 18', '_themename'); ?>">
+            <?php esc_html_e('+33 6 73 79 45 18', '_themename'); ?>
+        </a>
     </div>
     <div class="footer-item">
         <h3><?php esc_html_e('Gallery Hours', '_themename'); ?></h3>
         <p>
-            <?php esc_html_e('Wednesday - Saturday, 14h30 to 19h', '_themename'); ?>
-        </p>
-        <p>
-            <?php esc_html_e('Tuesday by appoitment only', '_themename'); ?>
+            Wednesday - Saturday, 14h30 to 19h
+            Tuesday by appoitment only
         </p>
     </div>
     <div class="footer-item">
         <h3><?php esc_html_e('Adress', '_themename'); ?></h3>
         <p>
-            <?php esc_html_e('54 Rue de Verneuil 75007, Paris ', '_themename'); ?>
-        </p>
-        <p>
-            <?php esc_html_e('Parking Musée d\'Orsay', '_themename'); ?>
+            54 Rue de Verneuil 75007, Paris
+            Parking Musée d'Orsay
         </p>
     </div>
     <div class="footer-item">
