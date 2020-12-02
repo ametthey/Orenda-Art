@@ -2,6 +2,7 @@
 
 </div><!-- #content -->
 
+<button class="button__top">TOP</button>
 <footer>
 
     <div class="footer-item">

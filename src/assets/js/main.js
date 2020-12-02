@@ -1,5 +1,6 @@
 import 'lazysizes';
 import './components/swiper.js';
+import './components/back-to-top.js';
 
 
 // Hamburger Menu
