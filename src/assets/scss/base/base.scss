@@ -45,6 +45,8 @@ body {
 
     @include respond(tablet) {
         background-image: none;
+
+        font-size: 0.825rem;
     }
 }
 
@@ -85,10 +87,6 @@ a {
     width: 100%;
 }
 
-// #page {
-//     padding: $ratio;
-// }
-
 #content {
     padding: 0 calc( #{$ratio} * 3);
 
@@ -96,45 +94,3 @@ a {
         padding: 0 calc( #{$ratio} * 0.4 );
     }
 }
-
-
-//
-//
-//
-//
-// #page {
-//     height: 100%;
-//     width: 100%;
-// }
-//
-// /*
-//  * Container for the main element and the sidebar
-//  * without header & footer
-//  */
-// #content {
-//     height: auto;
-//     position: relative;
-//     padding: 0 calc( #{$ratio} * 3);
-//     width: 100%;
-//
-//     @include respond(tablet) {
-//         padding: 0 calc( #{$ratio} * 0.4 );
-//     }
-// }
-//
-// /*
-//  * Container with sidebar
-//  */
-// #primary {
-//     height: inherit;
-//     width: inherit;
-// }
-//
-// /*
-//  * Container for main element
-//  * without sidebar
-//  */
-// #main {
-//     height: 100%;
-//     width: 100%;
-// / }

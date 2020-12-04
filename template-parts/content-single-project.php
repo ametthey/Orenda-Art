@@ -5,9 +5,7 @@
 ?>
 
     <div class="chapter">
-        <h6 class="chapter-link"><?php esc_html_e( 'Site de l\'artiste', '_themename' ); ?></h6>
-        <h6 class="chapter-link"><?php esc_html_e( 'Oeuvres disponibles', '_themename' ); ?></h6>
-        <h6 class="chapter-link"><?php esc_html_e( 'Télécharger le CV', '_themename' ); ?></h6>
+        <h6><?php esc_html_e( 'Artist Bio', '_themename' ); ?></h6>
     </div>
 
     <article id="artist-individual-presentation">
@@ -19,11 +17,13 @@
 
         <div class="artist-individual-presentation-text">
             <h2><?php esc_html_e( the_title() ); ?></h2>
-            <h5>paintings</h5>
-            <p class="press-item-texte">Le Parc is a major figure of historical importance within kinetic and contemporary art. In Paris in 1960, he cofounded the influential collective Groupe de Recherche d’Art Visuel (GRAV), along with Horacio Garcia Rossi, Francisco Sobrino, François Morellet, Joël Stein, and Jean-Pierre Vasarely (Yvaral). Le Parc’s early paintings were influenced by the constructivist movement known as Arte Concreto Invención, as well as artists such as Piet Mondrian and Victor Vasarely.
+            <p class="item-category"><?php the_terms( $post->ID, 'categoriedelartiste' ); ?></p>
+            <p class="item-link">View CV</p>
+            <p class="item-texte">Le Parc is a major figure of historical importance within kinetic and contemporary art. In Paris in 1960, he cofounded the influential collective Groupe de Recherche d’Art Visuel (GRAV), along with Horacio Garcia Rossi, Francisco Sobrino, François Morellet, Joël Stein, and Jean-Pierre Vasarely (Yvaral). Le Parc’s early paintings were influenced by the constructivist movement known as Arte Concreto Invención, as well as artists such as Piet Mondrian and Victor Vasarely.
                 <br>
                 <br>
                 Since 1959, Le Parc has continued on his own independent path, applying rigorous organizing principles to his paintings, whether exploring the use of fourteen scales of colors or white, gray, and black in endless varying yet precise combinations. Julio Le Parc was awarded the International Grand Prize for Painting at the 33rd Venice Biennale in 1966. A defender of human rights, he fought against dictatorship in Latin America through numerous collective antifascist projects.</p>
+            <p class="read-more">Read More</p>
         </div>
     </article>
 
