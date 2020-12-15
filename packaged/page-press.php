@@ -21,20 +21,20 @@
         </div>
 
         <article id="container-press-text">
-            <div class="entry-content container-press-item">
 
                 <?php if ( have_rows( 'add_press_older' ) ) : ?>
                     <?php while ( have_rows( 'add_press_older' ) ) : the_row(); ?>
+                    <div class="entry-content container-press-item">
                         <h2><?php the_sub_field( 'title_of_the_press_archive' ); ?></h2>
                         <p class="item-date"><?php the_sub_field( 'author_of_the_presss_archive' ); ?></p>
                         <a class="item-link" href="<?php the_sub_field( 'link_of_the_press_archive' ); ?>" target="_blank">View the article</a>
                         <p class="item-texte"><?php the_sub_field( 'description_of_the_press' ); ?></p>
+                    </div>
                     <?php endwhile; ?>
                 <?php else : ?>
                     <?php // no rows found ?>
                 <?php endif; ?>
 
-            </div>
         </article>
 
         <!-- Chapter: Archived Press -->

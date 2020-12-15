@@ -10,15 +10,14 @@
 
     <article id="artist-individual-presentation">
         <div class="artist-individual-presentation-image">
-            <?php //the_post_thumbnail( 'thumbnail' ); ?>
-            <img src="/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
-            <p>"René Magritte et sa femme", Magritte.</p>
+            <?php the_post_thumbnail( 'individual_artist_portrait' ); ?>
+            <p><?php the_field( 'image_information' ); ?></p>
         </div>
 
         <div class="artist-individual-presentation-text">
             <h2><?php esc_html_e( the_title() ); ?></h2>
             <p class="item-category"><?php the_terms( $post->ID, 'categoriedelartiste' ); ?></p>
-            <p class="item-link">View CV</p>
+            <a class="item-link" href="<?php the_field( 'cv_link' ); ?>" target="_blank">View CV</a>
             <p class="item-texte">Le Parc is a major figure of historical importance within kinetic and contemporary art. In Paris in 1960, he cofounded the influential collective Groupe de Recherche d’Art Visuel (GRAV), along with Horacio Garcia Rossi, Francisco Sobrino, François Morellet, Joël Stein, and Jean-Pierre Vasarely (Yvaral). Le Parc’s early paintings were influenced by the constructivist movement known as Arte Concreto Invención, as well as artists such as Piet Mondrian and Victor Vasarely.
                 <br>
                 <br>
@@ -34,22 +33,22 @@
     </div>
 
     <article>
-        <div class="individual-artist-item">
-            <img src="/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
-            <p>Title, 2020, walnut, 35 x 24 x 24 inches, 88.9 x 61 x 61 cm.</p>
-        </div>
-        <div class="individual-artist-item">
-            <img src="/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
-            <p>Title, 2020, walnut, 35 x 24 x 24 inches, 88.9 x 61 x 61 cm.</p>
-        </div>
-        <div class="individual-artist-item">
-            <img src="/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
-            <p>Title, 2020, walnut, 35 x 24 x 24 inches, 88.9 x 61 x 61 cm.</p>
-        </div>
-        <div class="individual-artist-item">
-            <img src="/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
-            <p>Title, 2020, walnut, 35 x 24 x 24 inches, 88.9 x 61 x 61 cm.</p>
-        </div>
+            <!-- <img src="/wp&#45;content/uploads/2020/11/rilesundayz_group.jpg" alt=""> -->
+            <!-- <p>Title, 2020, walnut, 35 x 24 x 24 inches, 88.9 x 61 x 61 cm.</p> -->
+        <?php if ( have_rows( 'images' ) ) : ?>
+            <?php while ( have_rows( 'images' ) ) : the_row(); ?>
+            <div class="individual-artist-item">
+                <?php $image = get_sub_field( 'image' ); ?>
+                <?php $size = 'full'; ?>
+                <?php if ( $image ) : ?>
+                    <?php echo wp_get_attachment_image( $image, $size ); ?>
+                <?php endif; ?>
+                <p><?php the_sub_field( 'description' ); ?></p>
+            </div>
+            <?php endwhile; ?>
+        <?php else : ?>
+            <?php // no rows found ?>
+        <?php endif; ?>
     </article>
 
     <?php the_content(); ?>
