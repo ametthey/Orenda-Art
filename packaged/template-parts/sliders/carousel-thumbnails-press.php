@@ -1,29 +1,38 @@
 <article class="container-carousel">
-    <!-- Slider main container : Full-->
-    <div class="swiper-container full">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-                <img src="/wp-content/uploads/2020/11/rilesundayz_group.jpg" alt="">
-                <p>"René Magritte et sa femme", Magritte.</p>
+    <?php if ( have_rows( 'add_press_&_carousel' ) ) : ?>
+        <?php while ( have_rows( 'add_press_&_carousel' ) ) : the_row(); ?>
+
+        <div class="swiper-container full">
+            <div class="swiper-wrapper">
+                <?php if ( have_rows( 'carousel' ) ) : ?>
+                    <?php while ( have_rows( 'carousel' ) ) : the_row(); ?>
+                    <div class="swiper-slide">
+                        <?php $image = get_sub_field( 'image' ); ?>
+                        <?php $size = 'full'; ?>
+                        <?php if ( $image ) : ?>
+                            <?php echo wp_get_attachment_image( $image, $size ); ?>
+                        <?php endif; ?>
+                        <p><?php the_sub_field( 'legende' ); ?></p>
+                    </div>
+                    <?php endwhile; ?>
+                <?php else : ?>
+                <?php // no rows found ?>
+                <?php endif; ?>
             </div>
-            <div class="swiper-slide">
-                <img src="/wp-content/uploads/2020/11/balm_couv_reduze.jpg" alt="">
-                <p>"René Magritte et sa femme", Magritte.</p>
-            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
 
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-     </div>
+        <div class="entry-content">
+            <h2><?php the_sub_field( 'title_of_the_press_archive' ); ?></h2>
+            <p><?php the_sub_field( 'author_of_the_presss_archive' ); ?></p>
+            <a class="item-link" href="<?php the_sub_field( 'link_of_the_press_archive' ); ?>" target="_blank">View The Article</a>
+            <p class="item-texte"><?php the_sub_field( 'description_of_the_press' ); ?></p>
+        </div>
 
-    <div class="entry-content">
-        <h2>Sculpture à l'Assemblée Nationale</h2>
-        <p>Joëlle Rostkowski, November, 12 2020</p>
-        <p class="item-link">View The Article</p>
-        <p class="item-texte">La Promesse de Bonheur, sculpture monumentale de Maria PAPA Rostkowska (1923-2008) fait partie des acquisitions récentes de l'Assemblée Nationale. Elle a été installée, en juin 2011, au Palais Bourbon juste en face de l'entrée de l'hémicycle. D'une hauteur de plus de trois mètres cette œuvre en marbre blanc de Carrare a été exécutée à Pietrasanta (Italie) par l'artiste en « taille directe » en 1995.</p>
-        <p class="read-more">Read More</p>
-    </div>
+        <?php endwhile; ?>
+    <?php else : ?>
+        <?php // no rows found ?>
+    <?php endif; ?>
 </article>

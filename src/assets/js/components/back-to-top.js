@@ -4,7 +4,7 @@
  *******************************************************************/
 
 // target the selector of back to top button
-const scrollToTopButton = document.querySelector('.button__top');
+const scrollToTopButton = document.querySelector('button#button__top');
 
 // Function to make the page go up to to the top
 const scrollToTop = () => {
@@ -18,8 +18,16 @@ const scrollToTop = () => {
 
 // if button exist, execute the function
 if ( scrollToTopButton ) {
-    scrollToTopButton.onclick = function(e) {
+    scrollToTopButton.addEventListener('click', function(e) {
         e.preventDefault();
+        console.log('back to top');
         scrollToTop();
-    }
+    });
+
+    //
+    // scrollToTopButton.onclick = function(e) {
+    //     e.preventDefault();
+    //     console.log('back to top');
+    //     scrollToTop();
+    // }
 }

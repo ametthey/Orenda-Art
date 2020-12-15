@@ -13,6 +13,7 @@
     h6 {
         font-weight: lighter;
         margin: 0 calc( #{$ratio} * 3 ) 0 0;
+        text-transform: capitalize;
 
         &.chapter-link {
             color: $beige;
@@ -27,8 +28,8 @@
         @include flex(flex-start, flex-start, column, flex-start, flex-start, column);
 
         p {
-            margin: calc( #{$ratio} / 8 ) 0 0 0;
-            width: 55%;
+            font-size: $body2;
+            // margin: calc( #{$ratio} / 8 ) 0 0 0;
 
             @include respond(tablet) {
                 width: 100%;

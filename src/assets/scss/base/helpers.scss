@@ -14,6 +14,7 @@ img {
 .item-link {
     // color: $beige;
     color: $bleuClair;
+    display: block;
     margin: 20px 0 0 0;
 
     @include respond(tablet) {

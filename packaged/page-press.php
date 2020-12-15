@@ -22,38 +22,24 @@
 
         <article id="container-press-text">
             <div class="entry-content container-press-item">
-                <h2>Sculpture à l'assemblée nationale</h2>
-                <p class="item-date">Joëlle Rostkowski, November, 12 2020</p>
-                <a class="item-link" href="#">View the article</a>
-                <p class="item-texte">La Promesse de Bonheur, sculpture monumentale de Maria PAPA Rostkowska (1923-2008) fait partie des acquisitions récentes de l'Assemblée Nationale. Elle a été installée, en juin 2011, au Palais Bourbon juste en face de l'entrée de l'hémicycle. D'une hauteur de plus de trois mètres cette œuvre en marbre blanc de Carrare a été exécutée à Pietrasanta (Italie) par l'artiste en « taille directe » en 1995.</p>
-                <a class="read-more" href="#">Read More</a>
-            </div>
-            <div class="entry-content container-press-item">
-                <h2>Sculpture à l'assemblée nationale</h2>
-                <p class="item-date">Joëlle Rostkowski, November, 12 2020</p>
-                <a class="item-link" href="#">View the article</a>
-                <p class="item-texte">La Promesse de Bonheur, sculpture monumentale de Maria PAPA Rostkowska (1923-2008) fait partie des acquisitions récentes de l'Assemblée Nationale. Elle a été installée, en juin 2011, au Palais Bourbon juste en face de l'entrée de l'hémicycle. D'une hauteur de plus de trois mètres cette œuvre en marbre blanc de Carrare a été exécutée à Pietrasanta (Italie) par l'artiste en « taille directe » en 1995.</p>
-                <a class="read-more" href="#">Read More</a>
-            </div>
-            <div class="entry-content container-press-item">
-                <h2>Sculpture à l'assemblée nationale</h2>
-                <p class="item-date">Joëlle Rostkowski, November, 12 2020</p>
-                <a class="item-link" href="#">View the article</a>
-                <p class="item-texte">La Promesse de Bonheur, sculpture monumentale de Maria PAPA Rostkowska (1923-2008) fait partie des acquisitions récentes de l'Assemblée Nationale. Elle a été installée, en juin 2011, au Palais Bourbon juste en face de l'entrée de l'hémicycle. D'une hauteur de plus de trois mètres cette œuvre en marbre blanc de Carrare a été exécutée à Pietrasanta (Italie) par l'artiste en « taille directe » en 1995.</p>
-                <a class="read-more" href="#">Read More</a>
-            </div>
-            <div class="entry-content container-press-item">
-                <h2>Sculpture à l'assemblée nationale</h2>
-                <p class="item-date">Joëlle Rostkowski, November, 12 2020</p>
-                <a class="item-link" href="#">View the article</a>
-                <p class="item-texte">La Promesse de Bonheur, sculpture monumentale de Maria PAPA Rostkowska (1923-2008) fait partie des acquisitions récentes de l'Assemblée Nationale. Elle a été installée, en juin 2011, au Palais Bourbon juste en face de l'entrée de l'hémicycle. D'une hauteur de plus de trois mètres cette œuvre en marbre blanc de Carrare a été exécutée à Pietrasanta (Italie) par l'artiste en « taille directe » en 1995.</p>
-                <a class="read-more" href="#">Read More</a>
+
+                <?php if ( have_rows( 'add_press_older' ) ) : ?>
+                    <?php while ( have_rows( 'add_press_older' ) ) : the_row(); ?>
+                        <h2><?php the_sub_field( 'title_of_the_press_archive' ); ?></h2>
+                        <p class="item-date"><?php the_sub_field( 'author_of_the_presss_archive' ); ?></p>
+                        <a class="item-link" href="<?php the_sub_field( 'link_of_the_press_archive' ); ?>" target="_blank">View the article</a>
+                        <p class="item-texte"><?php the_sub_field( 'description_of_the_press' ); ?></p>
+                    <?php endwhile; ?>
+                <?php else : ?>
+                    <?php // no rows found ?>
+                <?php endif; ?>
+
             </div>
         </article>
 
         <!-- Chapter: Archived Press -->
         <div class="chapter">
-            <h6><?php esc_html_e( 'Archived Presse', 'orenda_art' ); ?></h6>
+            <h6><a href="#" target="_blank"><?php esc_html_e( 'Archived Presse', 'orenda_art' ); ?></a></h6>
         </div>
 
     </main>

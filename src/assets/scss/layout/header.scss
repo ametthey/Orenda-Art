@@ -22,7 +22,7 @@
     opacity: 1;
     transition: opacity 0.725 ease-in-out;
 
-    svg {
+    .logo-desktop {
         height: 160px;
         max-width: 100%;
 
@@ -32,7 +32,7 @@
         }
     }
 
-    img {
+    .logo-mobile {
         display: none;
 
         @include respond(tablet) {

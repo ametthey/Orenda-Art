@@ -9,144 +9,35 @@
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
             <div class="chapter available-works">
-                <!-- <h6><?php esc_html_e( 'Oeuvres disponibles' , '_themename' ); ?></h6> -->
                 <p>Les oeuvres suivantes sont disponibles à la galerie en permanence. pour plus d’informations, veuillez contacter la galerie par téléphone ou email.</p>
             </div>
 
             <article class="available-works-grid">
-                <div class="available-works-item">
-                    <img src="/wp-content/uploads/2020/11/Aspect-ratio-4x3.svg_.png" alt="">
-                    <h3>Artist Name</h3>
-                    <p>Cendres et diamants</p>
-                    <p>Photography</p>
-                    <p>04/10/2010</p>
-                </div>
-                <div class="available-works-item">
-                    <img src="/wp-content/uploads/2020/11/Aspect-ratio-4x3.svg_.png" alt="">
-                    <h3>Artist Name</h3>
-                    <p>Cendres et diamants</p>
-                    <p>Photography</p>
-                    <p>04/10/2010</p>
-                </div>
-                <div class="available-works-item">
-                    <img src="/wp-content/uploads/2020/11/Aspect-ratio-4x3.svg_.png" alt="">
-                    <h3>Artist Name</h3>
-                    <p>Cendres et diamants</p>
-                    <p>Photography</p>
-                    <p>04/10/2010</p>
-                </div>
-
-                <div class="available-works-item">
-                    <img src="/wp-content/uploads/2020/11/Aspect-ratio-4x3.svg_.png" alt="">
-                    <h3>Artist Name</h3>
-                    <p>Cendres et diamants</p>
-                    <p>Photography</p>
-                    <p>04/10/2010</p>
-                </div>
-                <div class="available-works-item">
-                    <img src="/wp-content/uploads/2020/11/Aspect-ratio-4x3.svg_.png" alt="">
-                    <h3>Artist Name</h3>
-                    <p>Cendres et diamants</p>
-                    <p>Photography</p>
-                    <p>04/10/2010</p>
-                </div>
-                <div class="available-works-item">
-                    <img src="/wp-content/uploads/2020/11/Aspect-ratio-4x3.svg_.png" alt="">
-                    <h3>Artist Name</h3>
-                    <p>Cendres et diamants</p>
-                    <p>Photography</p>
-                    <p>04/10/2010</p>
-                </div>
-
-                <div class="available-works-item">
-                    <img src="/wp-content/uploads/2020/11/Aspect-ratio-4x3.svg_.png" alt="">
-                    <h3>Artist Name</h3>
-                    <p>Cendres et diamants</p>
-                    <p>Photography</p>
-                    <p>04/10/2010</p>
-                </div>
-                <div class="available-works-item">
-                    <img src="/wp-content/uploads/2020/11/Aspect-ratio-4x3.svg_.png" alt="">
-                    <h3>Artist Name</h3>
-                    <p>Cendres et diamants</p>
-                    <p>Photography</p>
-                    <p>04/10/2010</p>
-                </div>
-                <div class="available-works-item">
-                    <img src="/wp-content/uploads/2020/11/Aspect-ratio-4x3.svg_.png" alt="">
-                    <h3>Artist Name</h3>
-                    <p>Cendres et diamants</p>
-                    <p>Photography</p>
-                    <p>04/10/2010</p>
-                </div>
-
-                <div class="available-works-item">
-                    <img src="/wp-content/uploads/2020/11/Aspect-ratio-4x3.svg_.png" alt="">
-                    <h3>Artist Name</h3>
-                    <p>Cendres et diamants</p>
-                    <p>Photography</p>
-                    <p>04/10/2010</p>
-                </div>
-                <div class="available-works-item">
-                    <img src="/wp-content/uploads/2020/11/Aspect-ratio-4x3.svg_.png" alt="">
-                    <h3>Artist Name</h3>
-                    <p>Cendres et diamants</p>
-                    <p>Photography</p>
-                    <p>04/10/2010</p>
-                </div>
-                <div class="available-works-item">
-                    <img src="/wp-content/uploads/2020/11/Aspect-ratio-4x3.svg_.png" alt="">
-                    <h3>Artist Name</h3>
-                    <p>Cendres et diamants</p>
-                    <p>Photography</p>
-                    <p>04/10/2010</p>
-                </div>
-
-                <div class="available-works-item">
-                    <img src="/wp-content/uploads/2020/11/Aspect-ratio-4x3.svg_.png" alt="">
-                    <h3>Artist Name</h3>
-                    <p>Cendres et diamants</p>
-                    <p>Photography</p>
-                    <p>04/10/2010</p>
-                </div>
-                <div class="available-works-item">
-                    <img src="/wp-content/uploads/2020/11/Aspect-ratio-4x3.svg_.png" alt="">
-                    <h3>Artist Name</h3>
-                    <p>Cendres et diamants</p>
-                    <p>Photography</p>
-                    <p>04/10/2010</p>
-                </div>
-                <div class="available-works-item">
-                    <img src="/wp-content/uploads/2020/11/Aspect-ratio-4x3.svg_.png" alt="">
-                    <h3>Artist Name</h3>
-                    <p>Cendres et diamants</p>
-                    <p>Photography</p>
-                    <p>04/10/2010</p>
-                </div>
-
-                <div class="available-works-item">
-                    <img src="/wp-content/uploads/2020/11/Aspect-ratio-4x3.svg_.png" alt="">
-                    <h3>Artist Name</h3>
-                    <p>Cendres et diamants</p>
-                    <p>Photography</p>
-                    <p>04/10/2010</p>
-                </div>
-                <div class="available-works-item">
-                    <img src="/wp-content/uploads/2020/11/Aspect-ratio-4x3.svg_.png" alt="">
-                    <h3>Artist Name</h3>
-                    <p>Cendres et diamants</p>
-                    <p>Photography</p>
-                    <p>04/10/2010</p>
-                </div>
-                <div class="available-works-item">
-                    <img src="/wp-content/uploads/2020/11/Aspect-ratio-4x3.svg_.png" alt="">
-                    <h3>Artist Name</h3>
-                    <p>Cendres et diamants</p>
-                    <p>Photography</p>
-                    <p>04/10/2010</p>
-                </div>
+                <?php if ( have_rows( 'add_a_new_available_work' ) ) : ?>
+                    <?php while ( have_rows( 'add_a_new_available_work' ) ) : the_row(); ?>
+                    <div class="available-works-item">
+                        <?php $image = get_sub_field( 'image' ); ?>
+                        <?php $size = 'full'; ?>
+                        <?php if ( $image ) : ?>
+                            <?php echo wp_get_attachment_image( $image, $size ); ?>
+                        <?php endif; ?>
+                        <?php $artist_name = get_sub_field( 'artist_name' ); ?>
+                        <?php if ( $artist_name ) : ?>
+                            <?php foreach ( $artist_name as $post ) : ?>
+                                <?php setup_postdata ( $post ); ?>
+                                <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                            <?php endforeach; ?>
+                            <?php wp_reset_postdata(); ?>
+                        <?php endif; ?>
+                        <p><?php the_sub_field( 'title_of_the_work' ); ?></p>
+                        <p><?php the_sub_field( 'category_of_the_work' ); ?></p>
+                        <p><?php the_sub_field( 'date_of_the_work' ); ?></p>
+                    </div>
+                    <?php endwhile; ?>
+                <?php else : ?>
+                    <?php // no rows found ?>
+                <?php endif; ?>
             </article>
-
 
         <?php endwhile; endif; ?>
 
