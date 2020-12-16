@@ -26,7 +26,7 @@
                             <?php echo wp_get_attachment_image( $founder_portrait, $size, array( 'class' => 'image' ) ); ?>
                             <?php endif; ?>
                             <h3><?php the_sub_field( 'founder_title' ); ?></h3>
-                            <h6><?php the_sub_field( 'founder_description' ); ?></h6>
+                            <p class="blue"><?php the_sub_field( 'founder_description' ); ?></p class="blue">
                             <p><?php the_sub_field( 'founder_bio' ); ?></p>
                         <?php endwhile; ?>
                     <?php endif; ?>
@@ -42,7 +42,7 @@
                                 <?php echo wp_get_attachment_image( $founder_portrait, $size ); ?>
                             <?php endif; ?>
                             <h3><?php the_sub_field( 'founder_title' ); ?></h3>
-                            <h6><?php the_sub_field( 'founder_description' ); ?></h6>
+                            <p class="blue"><?php the_sub_field( 'founder_description' ); ?></p class="blue">
                             <p><?php the_sub_field( 'founder_bio' ); ?></p>
                         <?php endwhile; ?>
                     <?php endif; ?>
@@ -58,7 +58,7 @@
                                 <?php echo wp_get_attachment_image( $founder_portrait, $size ); ?>
                             <?php endif; ?>
                             <h3><?php the_sub_field( 'founder_title' ); ?></h3>
-                            <h6><?php the_sub_field( 'founder_description' ); ?></h6>
+                            <p class="blue"><?php the_sub_field( 'founder_description' ); ?></p class="blue">
                             <p><?php the_sub_field( 'founder_bio' ); ?></p>
                         <?php endwhile; ?>
                     <?php endif; ?>

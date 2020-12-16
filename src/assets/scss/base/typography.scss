@@ -7,7 +7,7 @@ a {
 }
 
 p {
-    color: $color1;
+    color: $color4;
     font-family: $font1;
 }
 
@@ -17,20 +17,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-family: $font1;
+    font-family: $font2;
     font-size: $h1;
-    line-height: $h1;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 55px;
 
     @include respond(hd) {
-        font-size: $h2;
-        line-height: $h2;
+        // font-size: $h2;
+        // line-height: $h2;
     }
 }
 
 h2 {
     font-family: $font2;
     font-size: $h2;
-    line-height: $h2;
+    line-height: 44px;
 
     @include respond(hd) {
         font-size: $h3;
@@ -41,7 +43,8 @@ h2 {
 h3 {
     font-family: $font2;
     font-size: $h3;
-    line-height: $h3;
+    line-height: 29px;
+    letter-spacing: -0.005em;
 
     @include respond(hd) {
         font-size: $h4;

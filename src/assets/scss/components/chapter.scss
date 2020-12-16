@@ -11,9 +11,13 @@
     }
 
     h6 {
-        font-weight: lighter;
         margin: 0 calc( #{$ratio} * 3 ) 0 0;
-        text-transform: capitalize;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
 
         &.chapter-link {
             color: $beige;
@@ -29,6 +33,7 @@
 
         p {
             font-size: $body2;
+            line-height: 21px;
             // margin: calc( #{$ratio} / 8 ) 0 0 0;
 
             @include respond(tablet) {

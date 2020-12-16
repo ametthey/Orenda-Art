@@ -20,34 +20,10 @@ if ( hamburgerButton ) {
     });
 }
 
+// Artist single page -> add artist menu active
+const singleArtist = document.querySelector('.single-artiste');
+let menuArtist = document.querySelector('.menu-item-30');
 
-// Get Instagram Followers Count with Account URL
-const getInstagramURL = document.querySelector('.instagram-url').getAttribute('href');
-let instagramURLSelection =  getInstagramURL.substr(0, getInstagramURL.lastIndexOf("/"));
-
-
-const instagramAccount = `https://www.instagram.com/romain.vicari/?__a=1`;
-let instagramCount = document.querySelector('.instagram-count');
-
-
-// /wp-json/wp/v2/clients
-
-fetch( instagramAccount )
-    .then( response => {
-        if ( response.status !== 200 ) {
-            console.log(`Problème ! Le status du code est ${response.status}`)
-            return;
-        } else {
-            // Fetch API to get posts
-            response.json().then( (instagram) => {
-                console.log(instagram);
-                let getInstagramCount = instagram.graphql.user.edge_followed_by.count;
-
-                instagramCount.innerHTML = getInstagramCount;
-            });
-        }
-    })
-    .catch( error => {
-        console.log(`Error: ${error}`);
-    });
-
+if ( singleArtist ) {
+    menuArtist.classList.add('current-menu-item');
+}

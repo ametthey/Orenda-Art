@@ -4,8 +4,8 @@
     <main id="main" class="site-main" role="main">
 
         <!-- Chapter: Les artistes -->
-        <div class="chapter">
-            <h6><?php esc_html_e( 'Les artistes', 'orenda_art' ); ?></h6>
+        <div class="chapter available-works">
+            <p>Les artistes et les collectionneurs ayant exposé à la Galerie Orenda ou qui y exposeront.</p>
         </div>
 
         <article class="container-artist-list">
@@ -23,7 +23,7 @@
         <a href="<?php esc_url( the_permalink() ); ?>">
             <div class="artist-thumbnail" id="artist-<?php the_ID(); ?>">
                 <?php echo get_the_post_thumbnail( $page->ID, 'full' ); ?>
-                <h4><?php the_title(); ?></h4>
+                <h3><?php the_title(); ?></h3>
             </div>
         </a>
 

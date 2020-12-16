@@ -19,7 +19,7 @@
         .hero-texte {
 
             @include flex( flex-start, flex-end, column, center, flex-end, column );
-            background-color: #E5F6FD;
+            background-color: #EDF3F6;
             height: auto;
             padding: $ratio calc( #{$ratio} * 2 );
             position: absolute;
@@ -37,7 +37,6 @@
 
             h1 {
                 color: inherit;
-                font-family: $font2;
 
                 @include respond(tablet) {
                     font-size: $h5;
@@ -48,7 +47,8 @@
             h3 {
                 color: inherit;
                 font-family: $font1;
-                font-style: italic;
+                font-size: 30px;
+                line-height: 34.7px;
 
                 @include respond(tablet) {
                     font-size: $h6;
