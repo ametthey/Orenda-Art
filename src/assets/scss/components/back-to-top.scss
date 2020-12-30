@@ -8,5 +8,6 @@
 
     @include respond(tablet) {
         display: block;
+        display: none;
     }
 }

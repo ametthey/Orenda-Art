@@ -12,18 +12,10 @@ img {
 
 // link in yellow
 .item-link {
-    // color: $beige;
     color: $bleuClair;
     display: block;
-    margin: 20px 0 0 0;
-
-    @include respond(tablet) {
-        margin: 10px 0 0 0;
-    }
-
-    &:hover {
-        text-decoration: underline;
-    }
+    margin: 10px 0 0 0;
+    text-decoration: underline;
 }
 
 .item-category {
@@ -52,7 +44,7 @@ img {
 }
 
 .item-texte {
-    margin: 20px 0 0 0;
+    margin: 10px 0 0 0;
 
     @include respond(tablet) {
         margin: 10px 0 0 0;
@@ -65,10 +57,6 @@ img {
 
     @include respond(tablet) {
         margin: 10px 0 0 0;
-    }
-
-    &:hover {
-        text-decoration: underline;
     }
 }
 

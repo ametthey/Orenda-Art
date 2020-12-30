@@ -38,8 +38,11 @@
         </article>
 
         <!-- Chapter: Archived Press -->
-        <div class="chapter">
-            <h6><a href="#" target="_blank"><?php esc_html_e( 'Archived Presse', 'orenda_art' ); ?></a></h6>
+        <div class="chapter chapter-past-exhibition">
+            <a href="<?php the_field( 'exposition_archivees' ); ?>" target="_blank">
+                <h6><?php esc_html_e( 'Archive press', 'orenda_art' ); ?></h6>
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/assets/images/arrow-down.svg" alt="">
+            </a>
         </div>
 
     </main>

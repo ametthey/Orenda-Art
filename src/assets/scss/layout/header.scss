@@ -10,7 +10,7 @@
 
 #masthead {
     @include flex(flex-end, center, row, flex-start, space-between, row);
-    padding: $ratio calc( #{$ratio} * 3 ) 0;
+    padding: $ratio 90px;
 
     @include respond(tablet) {
         border-bottom: 1px solid $color2;
@@ -25,6 +25,7 @@
     .logo-desktop {
         height: 149px;
         // max-width: 100%;
+        width: auto;
 
         @include respond(tablet) {
             display: none;
@@ -96,7 +97,7 @@
     top: 0;
     transform: translateX(100%);
     transition: transform 0.725s ease-in-out;
-    width: 100%;
+    width: 75%;
     z-index: 9;
 
     @include respond(tablet) {
@@ -107,11 +108,11 @@
         transform: translateX(0);
     }
 
-    .menu-header-mobile-container {
+    .menu-header-container {
         width: 100%;
     }
 
-    #menu-header-mobile {
+    #menu-header-1 {
         margin: 23px;
         width: 100%;
 

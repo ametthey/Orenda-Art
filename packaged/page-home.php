@@ -7,22 +7,15 @@
     <main id="main" class="site-main" role="main">
 
         <!-- Component: Carousel Hero -->
-        <?php get_template_part( 'template-parts/sliders/carousel', 'hero' ); ?>
+        <?php get_template_part( 'template-parts/sliders/carousel', 'home' ); ?>
 
         <!-- Chapter: About us -->
         <div class="chapter">
             <h6><?php esc_html_e( 'About us', 'orenda_art'  ); ?></h6>
         </div>
 
-        <!-- Component: Carousel with thumbnails - #1 -->
-        <?php get_template_part( 'template-parts/sliders/carousel', 'thumbnails' ); ?>
-
-        <!-- Component: Carousel with thumbnails - #2 -->
-        <?php get_template_part( 'template-parts/sliders/carousel', 'thumbnails' ); ?>
-
-        <!-- Component: Carousel with thumbnails - #3 -->
-        <?php get_template_part( 'template-parts/sliders/carousel', 'thumbnails' ); ?>
-
+        <!-- Component: Carousel with thumbnails - home -->
+        <?php get_template_part( 'template-parts/sliders/carousel', 'thumbnails-home' ); ?>
 
     </main>
 </div>

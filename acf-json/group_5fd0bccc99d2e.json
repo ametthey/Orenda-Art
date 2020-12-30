@@ -4,10 +4,10 @@
     "fields": [
         {
             "key": "field_5fd0bcf07b0ff",
-            "label": "Add a new Available Work",
+            "label": "Ajouter une nouvelle oeuvre disponible",
             "name": "add_a_new_available_work",
             "type": "repeater",
-            "instructions": "Add a new Available Work",
+            "instructions": "Ajouter une nouvelle oeuvre disponible",
             "required": 1,
             "conditional_logic": 0,
             "wrapper": {
@@ -15,11 +15,11 @@
                 "class": "",
                 "id": ""
             },
-            "collapsed": "",
+            "collapsed": "field_5fd0bd126ab6e",
             "min": 0,
             "max": 0,
             "layout": "block",
-            "button_label": "",
+            "button_label": "Ajouter une nouvelle oeuvre",
             "sub_fields": [
                 {
                     "key": "field_5fd0bd126ab6e",
@@ -30,7 +30,7 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "25",
+                        "width": "100",
                         "class": "",
                         "id": ""
                     },
@@ -54,7 +54,7 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "25",
+                        "width": "50",
                         "class": "",
                         "id": ""
                     },
@@ -79,7 +79,7 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "25",
+                        "width": "50",
                         "class": "",
                         "id": ""
                     },
@@ -98,7 +98,7 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "25",
+                        "width": "50",
                         "class": "",
                         "id": ""
                     },
@@ -117,7 +117,7 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "25",
+                        "width": "50",
                         "class": "",
                         "id": ""
                     },
@@ -140,10 +140,10 @@
         ]
     ],
     "menu_order": 0,
-    "position": "normal",
-    "style": "default",
+    "position": "acf_after_title",
+    "style": "seamless",
     "label_placement": "top",
-    "instruction_placement": "label",
+    "instruction_placement": "field",
     "hide_on_screen": [
         "permalink",
         "the_content",
@@ -162,5 +162,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1607516075
+    "modified": 1609338290
 }

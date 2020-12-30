@@ -1,10 +1,10 @@
-<article class="container-carousel">
+<article class="container-carousel inverse">
 <?php if ( have_rows( 'san_lazarro' ) ) : ?>
 	<?php while ( have_rows( 'san_lazarro' ) ) : the_row(); ?>
 
     <div class="entry-content">
 		<h2><?php the_sub_field( 'titre_' ); ?></h2>
-		<h5><?php the_sub_field( 'description' ); ?></h5>
+		<p class="blue"><?php the_sub_field( 'description' ); ?></p>
 		<p class="press-item-texte"><?php the_sub_field( 'explications' ); ?></p>
     </div>
 
@@ -30,8 +30,12 @@
         </div>
 
         <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/assets/images/carousel-arrow-left.svg" alt="">
+        </div>
+        <div class="swiper-button-next">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/assets/images/carousel-arrow-right.svg" alt="">
+        </div>
      </div>
 
 

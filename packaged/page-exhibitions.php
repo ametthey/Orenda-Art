@@ -8,32 +8,36 @@
 
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-        <!-- Chapter: Exposition actuelle -->
-        <div class="chapter">
-            <h6><?php esc_html_e( 'Exposition actuelle', 'orenda_art' ); ?></h6>
-        </div>
+        <?php if ( have_rows( 'expositions_actuelle' ) ) : ?>
+            <?php while ( have_rows( 'expositions_actuelle' ) ) : the_row(); ?>
 
-        <?php get_template_part( 'template-parts/sliders/carousel', 'hero-exhibition' ); ?>
+            <!-- Chapter: Exposition actuelle -->
+            <div class="chapter">
+                <h6><?php esc_html_e( 'Exposition actuelle', 'orenda_art' ); ?></h6>
 
-        <article class="exhibitions-presentation">
-            <h2>Revelation de la lumiere - 4 Février - 16 Mars 2021</h2>
-            <h3>Maurizio Toffoletti,  sculptures </h3>
-            <!-- <div class="exhibitions&#45;links"> -->
-            <!--     <a href="#"class="item&#45;link">Download Invitation</a> -->
-            <!--     <a href="#"class="item&#45;link">Download Press Release</a> -->
-            <!-- </div> -->
-        </article>
+                <div class="exhibitions-links">
+                    <?php $exposition_download_invitation = get_sub_field( 'exposition_download_invitation' ); ?>
+                    <?php if ( $exposition_download_invitation ) : ?>
+                        <?php $url = wp_get_attachment_url( $exposition_download_invitation ); ?>
+                        <a href="<?php echo esc_url( $url ); ?>" class="item-link" target="_blank">Download Invitation</a>
+                    <?php endif; ?>
+                    <?php $exposition_download_press_release = get_sub_field( 'exposition_download_press_release' ); ?>
+                    <?php if ( $exposition_download_press_release ) : ?>
+                        <?php $url = wp_get_attachment_url( $exposition_download_press_release ); ?>
+                        <a href="<?php echo esc_url( $url ); ?>" class="item-link" target="_blank">Download Press Release</a>
+                    <?php endif; ?>
+                </div>
+            </div>
 
-        <!-- <article class="exhibitions&#45;presentation&#45;full&#45;image"> -->
-        <!--     <img src="/wp&#45;content/uploads/2020/11/Aspect&#45;ratio&#45;4x3.svg_.png" alt=""> -->
-        <!-- </article> -->
-        <!--  -->
-        <!-- <article class="exhibitions&#45;presentation&#45;four&#45;images"> -->
-        <!--     <img src="/wp&#45;content/uploads/2020/11/Aspect&#45;ratio&#45;4x3.svg_.png" alt=""> -->
-        <!--     <img src="/wp&#45;content/uploads/2020/11/Aspect&#45;ratio&#45;4x3.svg_.png" alt=""> -->
-        <!--     <img src="/wp&#45;content/uploads/2020/11/Aspect&#45;ratio&#45;4x3.svg_.png" alt=""> -->
-        <!--     <img src="/wp&#45;content/uploads/2020/11/Aspect&#45;ratio&#45;4x3.svg_.png" alt=""> -->
-        <!-- </article> -->
+                <?php get_template_part( 'template-parts/sliders/carousel', 'hero-exhibition' ); ?>
+
+                <article class="exhibitions-presentation">
+                    <h2><?php the_sub_field( 'exposition_actuelle_titre' ); ?></h2>
+                    <h3><?php the_sub_field( 'exposition_actuelle_date' ); ?></h3>
+                </article>
+
+            <?php endwhile; ?>
+        <?php endif; ?>
 
         <!-- Chapter: Expositions passées -->
         <div class="chapter">
@@ -41,14 +45,15 @@
         </div>
 
         <!-- Component: Carousel with thumbnails - #1 -->
-        <?php get_template_part( 'template-parts/sliders/carousel', 'thumbnails' ); ?>
+        <?php get_template_part( 'template-parts/sliders/carousel', 'thumbnails-exhibition' ); ?>
 
-        <!-- Component: Carousel with thumbnails - #2 -->
-        <?php get_template_part( 'template-parts/sliders/carousel', 'thumbnails' ); ?>
-
-        <!-- Component: Carousel with thumbnails - #3 -->
-        <?php get_template_part( 'template-parts/sliders/carousel', 'thumbnails' ); ?>
-
+        <!-- Chapter: Expositions passées -->
+        <div class="chapter chapter-past-exhibition">
+            <a href="<?php the_field( 'exposition_archivees' ); ?>" target="_blank">
+                <h6><?php esc_html_e( 'Exposition archivées', 'orenda_art' ); ?></h6>
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/assets/images/arrow-down.svg" alt="">
+            </a>
+        </div>
 
 
         <?php endwhile; endif; ?>

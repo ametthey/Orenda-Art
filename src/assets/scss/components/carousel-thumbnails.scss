@@ -3,25 +3,42 @@
 // -----------------------------------------------------------------------------
 
 .container-carousel {
-    @include grid( repeat(2, 1fr), auto, repeat(1, 1fr), auto );
+    @include grid( 1.2fr 0.8fr, auto, repeat(1, 1fr), auto );
 
     gap: 25px;
-    margin: 0 0 calc( #{$ratio} * 2.25 ) 0;
+    margin: 0 0 70px 0;
+    width: 100%;
 
-    &:last-child {
-        margin: 0 0 0 0;
+    &.inverse {
+        @include grid( 0.8fr 1.2fr, auto, repeat(1, 1fr), auto );
     }
 
     .entry-content {
+        width: auto;
+
+        .blue {
+            color: $bleuClair;
+            margin: 10px 0;
+        }
+
         h5 {
             font-size: $body2;
             margin: 10px 0;
         }
     }
 
-    @include respond(tablet) {
-        gap: 25px;
+    &:last-of-type {
+        @include respond(tablet) {
+            margin: 0 0 70px 0;
+        }
     }
+
+    @include respond(tablet) {
+        gap: 10px;
+        margin: 0 0 30px 0;
+
+    }
+
 }
 
 .swiper-slide {

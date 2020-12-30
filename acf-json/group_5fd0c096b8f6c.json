@@ -3,10 +3,10 @@
     "title": "Press",
     "fields": [
         {
-            "key": "field_5fd0c56d936ec",
-            "label": "Add Main Press",
+            "key": "field_5fec8e7de77dd",
+            "label": "Main press",
             "name": "add_press_&_carousel",
-            "type": "repeater",
+            "type": "group",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -15,11 +15,7 @@
                 "class": "",
                 "id": ""
             },
-            "collapsed": "field_5fd0c0b69acda",
-            "min": 0,
-            "max": 0,
             "layout": "block",
-            "button_label": "Ajouter un nouvel article de press",
             "sub_fields": [
                 {
                     "key": "field_5fd0c56d936ed",
@@ -249,10 +245,26 @@
                     "default_value": "",
                     "tabs": "all",
                     "toolbar": "full",
-                    "media_upload": 1,
+                    "media_upload": 0,
                     "delay": 0
                 }
             ]
+        },
+        {
+            "key": "field_5fec9c1400426",
+            "label": "Press archived",
+            "name": "press_archived",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
         }
     ],
     "location": [
@@ -265,8 +277,8 @@
         ]
     ],
     "menu_order": 0,
-    "position": "normal",
-    "style": "default",
+    "position": "acf_after_title",
+    "style": "seamless",
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": [
@@ -287,5 +299,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1607518601
+    "modified": 1609341982
 }

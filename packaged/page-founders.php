@@ -7,9 +7,9 @@
     <main id="main" class="site-main" role="main">
 
         <!-- Chapter: les fondateurs -->
-        <div class="chapter">
-            <h6><?php esc_html_e( 'Les fondateurs', 'orenda_art' ); ?></h6>
-        </div>
+        <!-- <div class="chapter"> -->
+        <!--     <h6><?php esc_html_e( 'Les fondateurs', 'orenda_art' ); ?></h6> -->
+        <!-- </div> -->
 
         <article class="container-founders-bio">
             <?php if ( have_rows( 'the_founders' ) ) : ?>

@@ -10,26 +10,23 @@
 }
 
 .available-works-grid {
-    gap: 80px 25px;
-
-    // &:first-child {
-    //     @include grid(repeat(1, 1fr), auto, repeat(1, 1fr), auto);
-    // }
+    gap: 44px 30px;
 
     @include grid(repeat(3, 1fr), auto, repeat(1, 1fr), auto);
 
     @include respond(tablet) {
-        gap: 80px 25px;
+        gap: 44px 30px;
     }
 
     .available-works-item {
         h3 {
-            margin: 10px 0 0 0;
+            margin: 7px 0 7px 0;
         }
 
-        h5 {
-            font-family: $font1;
-            color: $color4;
+        p {
+            color: $grisFonce;
+            font-size: 11px;
+            line-height: 1.4;
         }
     }
 

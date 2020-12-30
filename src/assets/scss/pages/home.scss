@@ -1,0 +1,9 @@
+.home {
+    .container-carousel-hero {
+        margin: 0 0 70px 0;
+
+        @include respond(tablet) {
+            margin: 10px 0 70px 0;
+        }
+    }
+}

@@ -32,7 +32,7 @@ body {
     background-image: url( '/wp-content/themes/_themename/dist/assets/images/header_illustration.jpg' );
     background-position: top right;
     background-repeat: no-repeat;
-    background-size: 30%;
+    background-size: 470px;
     color: $color4;
     font-family: $font1;
     font-size: $p;
@@ -85,26 +85,14 @@ a {
 #primary,
 #main {
     height: auto;
+    position: relative;
     width: 100%;
 }
 
 #content {
-    padding: 0 calc( #{$ratio} * 3);
+    padding: 0 90px;
 
     @include respond(tablet) {
         padding: 0 calc( #{$ratio} * 0.4 );
-    }
-}
-
-// Common style
-.page {
-    article {
-        &:nth-of-type(1) {
-            margin-bottom: calc( #{$ratio} * 3 );
-
-            @include respond(tablet) {
-                margin-bottom: 0;
-            }
-        }
     }
 }

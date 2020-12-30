@@ -27,3 +27,4 @@ let menuArtist = document.querySelector('.menu-item-30');
 if ( singleArtist ) {
     menuArtist.classList.add('current-menu-item');
 }
+

@@ -7,7 +7,7 @@
 
     <div class="footer-item">
         <h3><?php esc_html_e('Contact', '_themename'); ?></h3>
-        <a href="mailto:<?php esc_html_e('art@orenda-art.com', '_themename'); ?>">
+        <a class="footer-mail" href="mailto:<?php esc_html_e('art@orenda-art.com', '_themename'); ?>">
             <?php esc_html_e('art@orenda-art.com', '_themename'); ?>
         </a>
         <a href="tel:<?php esc_html_e('+33 1 49 26 90 09', '_themename'); ?>)">

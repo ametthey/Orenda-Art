@@ -1,9 +1,10 @@
 #container-press-text {
     @include grid(repeat(2, 1fr), auto, 1fr, auto);
-    gap: calc( #{$ratio} * 3 ) calc( #{$ratio} * 1 );
+    gap: 46px 102px;
 
     @include respond(tablet) {
         gap: 25px 25px;
+        margin: 0 0 70px 0;
     }
 }
 
