@@ -75,7 +75,7 @@
                     "key": "field_5fd0c56d936f0",
                     "label": "Description of the press",
                     "name": "description_of_the_press",
-                    "type": "wysiwyg",
+                    "type": "textarea",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -85,10 +85,10 @@
                         "id": ""
                     },
                     "default_value": "",
-                    "tabs": "all",
-                    "toolbar": "full",
-                    "media_upload": 1,
-                    "delay": 0
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": ""
                 },
                 {
                     "key": "field_5fd0c5a76ad51",
@@ -233,7 +233,7 @@
                     "key": "field_5fd0c0f79acdd",
                     "label": "Description of the press",
                     "name": "description_of_the_press",
-                    "type": "wysiwyg",
+                    "type": "textarea",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -243,10 +243,10 @@
                         "id": ""
                     },
                     "default_value": "",
-                    "tabs": "all",
-                    "toolbar": "full",
-                    "media_upload": 0,
-                    "delay": 0
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": ""
                 }
             ]
         },
@@ -299,5 +299,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1609341982
+    "modified": 1610042588
 }

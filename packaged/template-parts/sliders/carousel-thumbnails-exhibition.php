@@ -35,7 +35,7 @@
             <div class="entry-content">
                 <h2><?php the_sub_field( 'titre_de_lexposition_passee' ); ?></h2>
                 <h5><?php the_sub_field( 'sous_titre_de_lexposition_passee' ); ?></h5>
-                <p class="press-item-texte"><?php the_sub_field( 'description_de_lexposition_passee' ); ?></p>
+                <p class="item-texte"><?php the_sub_field( 'description_de_lexposition_passee' ); ?></p>
             </div>
         </article>
     <?php endwhile; ?>

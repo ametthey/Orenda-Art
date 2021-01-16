@@ -35,7 +35,7 @@
         <div class="entry-content">
             <h2><?php the_sub_field( 'titre_home' ); ?></h2>
             <h5><?php the_sub_field( 'sous_titre_home' ); ?></h5>
-            <p class="press-item-texte"><?php the_sub_field( 'description_home' ); ?></p>
+            <p class="item-texte"><?php the_sub_field( 'description_home' ); ?></p>
         </div>
 	<?php endwhile; ?>
     <?php endif; ?>

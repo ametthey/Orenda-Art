@@ -45,9 +45,14 @@
     }
 }
 
+.artist-arrow {
+    height: 30px;
+    width: 100%;
+}
+
 .artist-pagination {
+    bottom: 0;
     cursor: pointer;
-    margin: $ratio 0 0 0;
     position: absolute;
     right: 0;
     width: 65px;

@@ -1,7 +1,7 @@
 .container-founders-bio {
     // gap: calc(#{$ratio} * 3);
     gap: 80px;
-    // margin: 0 calc( #{$ratio} * 2 ) calc( #{$ratio} * 2 ) calc( #{$ratio} * 2 );
+    margin: 45px 0 0 0;
 
     @include grid(repeat(3, 1fr), auto, 1fr, auto);
 

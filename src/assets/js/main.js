@@ -28,3 +28,18 @@ if ( singleArtist ) {
     menuArtist.classList.add('current-menu-item');
 }
 
+
+// read more
+// https://github.com/jedfoster/Readmore.js/tree/version-3.0
+import Readmore from 'readmore-js';
+
+// Press
+const readMoreParagraphs = document.querySelectorAll('.item-texte');
+
+new Readmore( readMoreParagraphs, {
+    speed: 200,
+    collapseHeight: 20,
+    lessLink: '<a href="#" class="read-more">Read less</a>',
+    heightMargin: 16,
+    moreLink: '<a href="#" class="read-more">Read more</a>',
+});

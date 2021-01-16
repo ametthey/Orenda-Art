@@ -10,7 +10,7 @@
 
 #masthead {
     @include flex(flex-end, center, row, flex-start, space-between, row);
-    padding: $ratio 90px;
+    padding: 0 90px 0 90px;
 
     @include respond(tablet) {
         border-bottom: 1px solid $color2;

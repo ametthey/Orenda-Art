@@ -5,7 +5,8 @@
  * *************************************************/
 
 footer {
-    @include flex(center, space-around, row, flex-start, space-evenly, column);
+    @include grid( 1fr 1.5fr 1fr 1fr, auto, 1fr, auto );
+    gap: 0 90px;
     background-color: $bleuClair;
     background-image: url('/wp-content/uploads/footer_bandeau.jpg');
     background-repeat: repeat-x;
@@ -25,9 +26,6 @@ footer {
 }
 
 .footer-item {
-    height: 200px;
-    width: 20%;
-
     @include flex(flex-start, flex-start, column, flex-start, flex-start, column);
 
     @include respond(tablet) {
@@ -43,13 +41,13 @@ footer {
         }
     }
 
-    &:last-child {
-        width: 234px;
-
-        @include respond(tablet) {
-            width: 100%;
-        }
-    }
+    // &:last-child {
+    //     // width: 234px;
+    //
+    //     @include respond(tablet) {
+    //         width: 100%;
+    //     }
+    // }
 
     h3 {
         font-family: $font1;
@@ -57,7 +55,6 @@ footer {
         font-family: Montserrat;
         font-size: 26.895px;
         line-height: 33px;
-        text-align: center;
         text-transform: uppercase;
 
 

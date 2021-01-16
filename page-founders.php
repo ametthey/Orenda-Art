@@ -27,7 +27,7 @@
                             <?php endif; ?>
                             <h3><?php the_sub_field( 'founder_title' ); ?></h3>
                             <p class="blue"><?php the_sub_field( 'founder_description' ); ?></p class="blue">
-                            <p><?php the_sub_field( 'founder_bio' ); ?></p>
+                            <p class="item-texte"><?php the_sub_field( 'founder_bio' ); ?></p>
                         <?php endwhile; ?>
                     <?php endif; ?>
                 </div>
@@ -43,7 +43,7 @@
                             <?php endif; ?>
                             <h3><?php the_sub_field( 'founder_title' ); ?></h3>
                             <p class="blue"><?php the_sub_field( 'founder_description' ); ?></p class="blue">
-                            <p><?php the_sub_field( 'founder_bio' ); ?></p>
+                            <p class="item-texte"><?php the_sub_field( 'founder_bio' ); ?></p>
                         <?php endwhile; ?>
                     <?php endif; ?>
                 </div>
@@ -59,7 +59,7 @@
                             <?php endif; ?>
                             <h3><?php the_sub_field( 'founder_title' ); ?></h3>
                             <p class="blue"><?php the_sub_field( 'founder_description' ); ?></p class="blue">
-                            <p><?php the_sub_field( 'founder_bio' ); ?></p>
+                            <p class="item-texte"><?php the_sub_field( 'founder_bio' ); ?></p>
                         <?php endwhile; ?>
                     <?php endif; ?>
                 </div>

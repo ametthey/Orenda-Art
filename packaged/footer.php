@@ -2,7 +2,12 @@
 
 </div><!-- #content -->
 
-<button id="button__top">TOP</button>
+<button id="button__top">
+    <svg width="29" height="17" viewBox="0 0 29 17" xmlns="http://www.w3.org/2000/svg">
+        <path d="M27 2.20679L12.8301 15.002M2 2.20679L16.1699 15.002" stroke="#00597B" stroke-width="5"/>
+    </svg>
+</button>
+
 <footer>
 
     <div class="footer-item">

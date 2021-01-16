@@ -49,9 +49,11 @@
 
         <!-- Chapter: Expositions passées -->
         <div class="chapter chapter-past-exhibition">
-            <a href="<?php the_field( 'exposition_archivees' ); ?>" target="_blank">
+            <a href="<?php the_field( 'exposition_archivees' ); ?>" class="item-link" target="_blank">
                 <h6><?php esc_html_e( 'Exposition archivées', '_themename' ); ?></h6>
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/assets/images/arrow-down.svg" alt="">
+                <svg class="chapter-arrow-down" width="29" height="17" viewBox="0 0 29 17" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M27 2.20679L12.8301 15.002M2 2.20679L16.1699 15.002" stroke="#00597B" stroke-width="5"/>
+                </svg>
             </a>
         </div>
 

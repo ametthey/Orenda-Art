@@ -54,15 +54,25 @@
             @include flex(center, flex-start, row, baseline, flex-start, row);
 
             h6 {
+                color: $bleuClair !important;
                 margin: 0 10px 0 0;
             }
-            img {
+            svg {
                 height: 12px;
-                transition: transform 0.325s ease-in-out;
                 width: auto;
 
-                &:hover {
-                    transform: rotate(90deg);
+                path {
+                    fill: $bleuClair !important;
+                }
+
+            }
+
+            &.item-link {
+                color: $bleuClair !important;
+
+                h6 {
+                    // text-transform: capitalize;
+                    // font-weight: 400;
                 }
             }
         }

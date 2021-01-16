@@ -5,7 +5,7 @@
     <div class="entry-content">
 		<h2><?php the_sub_field( 'titre_' ); ?></h2>
 		<p class="blue"><?php the_sub_field( 'description' ); ?></p>
-		<p class="press-item-texte"><?php the_sub_field( 'explications' ); ?></p>
+		<p class="item-texte"><?php the_sub_field( 'explications' ); ?></p>
     </div>
 
     <!-- Slider main container : Full-->

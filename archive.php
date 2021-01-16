@@ -31,8 +31,10 @@
 
         <?php endwhile; endif; wp_reset_postdata(); ?> <!-- WP_Query for CPT project -->
         </article>
+        <div class="artist-arrow">
+            <img class="artist-pagination" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/assets/images/arrow-left.svg">
+        </div>
 
-        <img class="artist-pagination" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/assets/images/arrow-left.svg">
 
 
     </main>
