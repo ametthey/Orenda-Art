@@ -19,7 +19,6 @@
             <p class="item-category"><?php the_terms( $post->ID, 'categoriedelartiste' ); ?></p>
             <a class="item-link" href="<?php the_field( 'cv_link' ); ?>" target="_blank">View CV</a>
             <p class="item-texte"><?php the_field( 'paragraphe' ); ?></p>
-            <p class="read-more">Read More</p>
         </div>
     </article>
 
