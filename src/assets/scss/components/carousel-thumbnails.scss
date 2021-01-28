@@ -43,6 +43,10 @@
 }
 
 .swiper-slide {
+    align-items: center !important;
+    display: flex;
+    justify-content: center !important;
+    height: auto;
     p {
         color: $bleuClair;
         font-style: normal;
@@ -51,6 +55,15 @@
         line-height: 14px;
         letter-spacing: 0.01em;
         margin: calc( #{$ratio} / 8 ) 0 calc( #{$ratio} / 4 ) 0;
+    }
+
+    img {
+        // height: auto;
+        max-height: 500px;
+        width: auto;
+        // height: 100%;
+        // width: 50%;
+        // object-fit: contain;
     }
 }
 

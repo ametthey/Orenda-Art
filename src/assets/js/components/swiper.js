@@ -5,6 +5,7 @@ const carouselNormal = document.querySelectorAll('.container-carousel');
 const swiperContainersHero = document.querySelectorAll('.hero');
 
 let swiperSettings = {
+    autoheight: true,
     directon: 'vertical',
     // loop: true,
     speed: 900,
